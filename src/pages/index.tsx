@@ -81,51 +81,30 @@ export default function HomePage() {
           height={1080}
         />
         {/* Center Vignette Radial Gradient for Legibility */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.35)_0%,rgba(0,0,0,0.1)_60%,rgba(0,0,0,0.5)_100%)] pointer-events-none" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.3)_0%,rgba(0,0,0,0.05)_60%,rgba(0,0,0,0.45)_100%)] pointer-events-none" />
 
-        {/* Centered Perspective Typography Overlay */}
-        <div className="absolute inset-0 flex flex-col items-center justify-end pb-10 md:pb-16 text-center pointer-events-none px-4">
-          <h1 className="sr-only">Alley 21 Enterprises — AI & Technology Integration, Workflow & Solutions Consulting</h1>
+        {/* Centered Typography Overlay */}
+        <div className="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none px-4">
+          <h1 className="sr-only">Alley 21 Enterprises — Making life simple.</h1>
 
           {/* Alley 21 Logo Type Matched to Brand Image */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9, y: 10 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             transition={{ duration: 1, ease: 'easeOut' as const }}
-            className="flex flex-col items-center mb-6"
+            className="flex flex-col items-center"
           >
             <div className="flex items-baseline gap-2">
-              <span className="font-script text-5xl md:text-7xl lg:text-8xl text-[#FFFDF5] leading-none drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
+              <span className="font-script text-6xl md:text-8xl lg:text-9xl text-[#FFFDF5] leading-none drop-shadow-[0_4px_18px_rgba(0,0,0,0.95)]">
                 Alley
               </span>
-              <span className="font-display text-5xl md:text-7xl lg:text-8xl text-[#FFFDF5] leading-none drop-shadow-[0_4px_16px_rgba(0,0,0,0.95)]">
+              <span className="font-display text-6xl md:text-8xl lg:text-9xl text-[#FFFDF5] leading-none drop-shadow-[0_4px_18px_rgba(0,0,0,0.95)]">
                 21
               </span>
             </div>
-            <p className="font-cinzel text-xs md:text-base lg:text-lg font-bold tracking-[0.45em] uppercase text-[#F4E4BA] mt-2 drop-shadow-[0_3px_10px_rgba(0,0,0,0.95)]">
+            <p className="font-cinzel text-sm md:text-xl lg:text-2xl font-bold tracking-[0.45em] uppercase text-[#F4E4BA] mt-3 drop-shadow-[0_3px_12px_rgba(0,0,0,0.95)]">
               ENTERPRISES
             </p>
-          </motion.div>
-
-          {/* Perspective Crawl Text (3D Road Alignment) */}
-          <motion.div
-            initial={{ opacity: 0, y: 25, rotateX: 30 }}
-            animate={{ opacity: 1, y: 0, rotateX: 20 }}
-            transition={{ duration: 1.2, delay: 0.4, ease: 'easeOut' as const }}
-            style={{ perspective: '650px', transformStyle: 'preserve-3d' }}
-            className="w-full max-w-4xl"
-          >
-            <div
-              style={{ transform: 'rotateX(22deg)', transformOrigin: 'top center' }}
-              className="flex flex-col items-center gap-1.5 py-4 px-6 rounded-2xl bg-black/40 backdrop-blur-xs border border-white/15 shadow-2xl"
-            >
-              <p className="font-heading text-lg md:text-3xl font-extrabold tracking-wide text-[#FFFFFF] drop-shadow-[0_4px_14px_rgba(0,0,0,0.98)]">
-                AI & Technology Integration
-              </p>
-              <p className="font-body text-sm md:text-xl font-semibold tracking-wider text-[#F7E7BE] drop-shadow-[0_3px_10px_rgba(0,0,0,0.98)]">
-                Workflow & Solutions Consulting
-              </p>
-            </div>
           </motion.div>
         </div>
       </section>
