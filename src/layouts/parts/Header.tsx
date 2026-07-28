@@ -12,7 +12,6 @@ const mainNavItems = [
 export default function Header() {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const isHome = location.pathname === '/';
 
   return (
     <header className="sticky top-0 z-50 border-b border-transparent bg-transparent">
@@ -43,15 +42,6 @@ export default function Header() {
         {isMobileMenuOpen && (
           <div className="absolute right-6 top-20 min-w-[260px] rounded-xl border border-border bg-background/95 py-4 shadow-xl backdrop-blur-md">
             <nav aria-label="Main navigation" className="flex flex-col">
-              {!isHome && (
-                <Link
-                  to="/"
-                  className="px-6 py-3 text-xs font-semibold uppercase tracking-widest text-muted-foreground transition-colors hover:bg-muted hover:text-primary"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  Home
-                </Link>
-              )}
               {mainNavItems.map((item) => (
                 <Link
                   key={item.href}

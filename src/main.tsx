@@ -5,6 +5,8 @@ import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import '@fontsource/syne/700.css';
 import '@fontsource/dm-serif-display/400.css';
 import '@fontsource-variable/inter';
+import '@fontsource/alex-brush/400.css';
+import '@fontsource/cinzel/600.css';
 import App from './App';
 import './styles/globals.css';
 

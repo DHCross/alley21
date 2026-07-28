@@ -61,7 +61,9 @@ export default {
 			heading: ['"Syne"', 'var(--font-heading)', 'sans-serif'],
 			body: ['"Inter Variable"', 'Inter', 'var(--font-sans)', 'system-ui', 'sans-serif'],
 			sans: ['"Inter Variable"', 'Inter', 'var(--font-sans)', 'system-ui', 'sans-serif'],
-			serif: ['"DM Serif Display"', 'var(--font-serif)', 'serif'],
+			serif: ['"DM Serif Display"', '"Cinzel"', 'serif'],
+			script: ['"Alex Brush"', 'cursive'],
+			cinzel: ['"Cinzel"', 'serif'],
 			mono: ['var(--font-mono)', 'monospace']
 		},
   		keyframes: {
