@@ -72,8 +72,8 @@ export default function HomePage() {
       {/* ── HERO ── */}
       <section className="relative w-full overflow-hidden" style={{ height: 'calc(100vh - 80px)' }}>
         <img
-          src="/assets/images/a-small-informal-workshop-or-classroom-s-iMsbm7.webp"
-          alt="Small informal workshop space with wooden tables and seating"
+          src="/assets/images/home-hero-background.webp"
+          alt="Alley 21 sunlit tree-lined path with wooden fences and vintage street sign"
           className="w-full h-full object-cover object-center"
           loading="eager"
           fetchPriority="high"
