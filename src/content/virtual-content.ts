@@ -5,8 +5,8 @@ export const about = {
     { heading: 'Empowerment', body: 'Giving you the tools to thrive on your own terms.', id: 'principle-3' },
   ],
   channels: [
-    { href: 'https://instagram.com/alley21', label: 'Instagram', body: 'Follow our journey on Instagram.', id: 'channel-1' },
-    { href: 'https://facebook.com/alley21', label: 'Facebook', body: 'Connect with us on Facebook.', id: 'channel-2' },
+    { href: 'https://www.instagram.com/alley21enterprises/', label: 'Instagram', body: 'Follow our journey on Instagram.', id: 'channel-1' },
+    { href: 'https://www.facebook.com/alley21enterprises/', label: 'Facebook', body: 'Connect with us on Facebook.', id: 'channel-2' },
   ],
 };
 
@@ -34,9 +34,10 @@ export const collections = {
   categoriesEyebrow: 'Categories',
   categoriesHeading: 'Find Your Style',
   categories: [
-    { label: 'Fashion', description: 'Vintage clothing and accessories.', id: 'cat-1' },
-    { label: 'Art', description: 'Unique art pieces and decor.', id: 'cat-2' },
-    { label: 'Collectibles', description: 'Rare finds and treasures.', id: 'cat-3' },
+    { label: 'Vintage Fashion', description: 'Vintage clothing and accessories.', id: 'cat-1' },
+    { label: 'Art and Collectibles', description: 'Unique art pieces and decor.', id: 'cat-2' },
+    { label: 'Designer Accessories', description: 'Bags, scarves, jewelry, and more.', id: 'cat-3' },
+    { label: 'Furniture and Home', description: 'Restored and refinished furniture pieces.', id: 'cat-4' },
   ],
   pillarsEyebrow: 'What We Stand For',
   pillarsHeading: 'Quality & Care',

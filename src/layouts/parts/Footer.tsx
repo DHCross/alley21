@@ -33,7 +33,7 @@ export default function Footer() {
             </div>
             <div className="flex gap-4">
               <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/alley21enterprises/"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Alley 21 on Instagram"

@@ -156,8 +156,8 @@ export default function VintagePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent pointer-events-none" />
                   <div className="absolute bottom-0 left-0 p-8">
-                    <h3 className="font-heading text-3xl font-extrabold text-foreground mb-3">{collections.categories[0].label}</h3>
-                    <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">{collections.categories[0].description}</p>
+                    <h3 className="font-heading text-3xl font-extrabold text-foreground mb-3">{collections.categories[0]?.label || 'Vintage Fashion'}</h3>
+                    <p className="text-muted-foreground text-sm leading-relaxed max-w-xs">{collections.categories[0]?.description}</p>
                   </div>
                 </div>
               </motion.div>
@@ -175,8 +175,8 @@ export default function VintagePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent pointer-events-none" />
                   <div className="absolute bottom-0 left-0 p-6">
-                    <h3 className="font-heading text-2xl font-bold text-foreground mb-2">{collections.categories[1].label}</h3>
-                    <p className="text-muted-foreground text-sm">{collections.categories[1].description}</p>
+                    <h3 className="font-heading text-2xl font-bold text-foreground mb-2">{collections.categories[1]?.label || 'Art and Collectibles'}</h3>
+                    <p className="text-muted-foreground text-sm">{collections.categories[1]?.description}</p>
                   </div>
                 </div>
               </motion.div>
@@ -194,8 +194,8 @@ export default function VintagePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent pointer-events-none" />
                   <div className="absolute bottom-0 left-0 p-6">
-                    <h3 className="font-heading text-2xl font-bold text-foreground mb-2">{collections.categories[2].label}</h3>
-                    <p className="text-muted-foreground text-sm">{collections.categories[2].description}</p>
+                    <h3 className="font-heading text-2xl font-bold text-foreground mb-2">{collections.categories[2]?.label || 'Designer Accessories'}</h3>
+                    <p className="text-muted-foreground text-sm">{collections.categories[2]?.description}</p>
                   </div>
                 </div>
               </motion.div>
@@ -213,8 +213,8 @@ export default function VintagePage() {
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-background/90 via-background/20 to-transparent pointer-events-none" />
                   <div className="absolute bottom-0 left-0 p-8">
-                    <h3 className="font-heading text-2xl font-bold text-foreground mb-2">{collections.categories[3].label}</h3>
-                    <p className="text-muted-foreground text-sm max-w-lg">{collections.categories[3].description}</p>
+                    <h3 className="font-heading text-2xl font-bold text-foreground mb-2">{collections.categories[3]?.label || 'Furniture and Home'}</h3>
+                    <p className="text-muted-foreground text-sm max-w-lg">{collections.categories[3]?.description}</p>
                   </div>
                 </div>
               </motion.div>
