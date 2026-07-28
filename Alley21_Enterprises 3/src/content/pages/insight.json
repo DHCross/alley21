@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "name": "Raven",
+      "description": "A narrative interpretation engine that helps you examine your own patterns through structured reflection. Raven reads your inputs — journal entries, decisions, recurring tensions — and surfaces the threads you might not see on your own. Currently in development.",
+      "status": "Coming soon",
+      "id": "1wiGIInMrIk_Bwt_YCiPU"
+    },
+    {
+      "name": "The Woven Map",
+      "description": "A dynamic, evolving personal record built from what Raven surfaces. Not a static chart or a personality label — a living map of your patterns, cycles, and growth edges that updates as you do. Currently in development.",
+      "status": "Coming soon",
+      "id": "tjVtxFSUTzDeGJQb-WGnm"
+    }
+  ]
+}

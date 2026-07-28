@@ -1,0 +1,44 @@
+{
+  "services": [
+    {
+      "title": "Website design support",
+      "description": "Practical guidance to improve your website, clarify its purpose, and make it easier for customers to use.",
+      "id": "website_design_support"
+    },
+    {
+      "title": "AI integration",
+      "description": "Select and introduce useful AI tools that fit your work, your team, and your goals.",
+      "id": "NCcr5FHgHBCRld2d1U9_Q"
+    },
+    {
+      "title": "Business automation",
+      "description": "Automate repetitive tasks and connect the tools you already use to save time and reduce manual work.",
+      "id": "sq9DqmCC4h0F_hbiEUT5A"
+    },
+    {
+      "title": "Workflow design and improvement",
+      "description": "Map how work gets done, identify bottlenecks, and build clearer, more effective everyday processes.",
+      "id": "workflow_design_improvement"
+    },
+    {
+      "title": "Technology setup and troubleshooting",
+      "description": "Get help choosing, setting up, and resolving issues with the technology your work depends on.",
+      "id": "technology_setup_troubleshooting"
+    },
+    {
+      "title": "Training and practical guidance",
+      "description": "Build confidence with clear, hands-on instruction tailored to the tools and tasks that matter to you.",
+      "id": "2jwCtenLDgYY1J06SqWXz"
+    },
+    {
+      "title": "Customized solutions for small businesses",
+      "description": "Develop right-sized technology solutions around the real needs, resources, and priorities of your business.",
+      "id": "customized_small_business_solutions"
+    },
+    {
+      "title": "Classes and workshops",
+      "description": "Join practical AI and technology classes and workshops for individuals, teams, and organizations.",
+      "id": "classes_workshops"
+    }
+  ]
+}

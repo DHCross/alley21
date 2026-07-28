@@ -1,0 +1,35 @@
+{
+  "hero": {
+    "eyebrow": "Alley 21 Enterprises",
+    "title": "Tools for Self-Discovery",
+    "subtitle": "Thoughtful assessments, guided reflection resources, and personal insight tools designed to support clearer self-understanding."
+  },
+  "intro": {
+    "eyebrow": "What this is",
+    "heading": "A thoughtful space for clearer self-understanding.",
+    "body": "Explore assessments, guided reflection resources, and personal insight tools designed to help you notice patterns and make sense of what matters."
+  },
+  "products": {
+    "eyebrow": "Resources and tools",
+    "heading": "What you’ll find",
+    "items": [
+      {
+        "status": "In development",
+        "name": "Raven",
+        "description": "A narrative interpretation engine for examining personal patterns through structured reflection.",
+        "id": "U83aocnRbBqXEEmp9mteK"
+      },
+      {
+        "status": "In development",
+        "name": "The Woven Map",
+        "description": "A companion framework for gathering and revisiting the discoveries that emerge over time.",
+        "id": "BCZHlFX6VtB41H_RQoJAh"
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Want to know when these are ready?",
+    "primaryLabel": "Get in touch",
+    "secondaryLabel": "Back to Alley 21"
+  }
+}
