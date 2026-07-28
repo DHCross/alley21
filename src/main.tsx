@@ -2,6 +2,9 @@ import { StrictMode } from 'react';
 import { createRoot, hydrateRoot } from 'react-dom/client';
 import { HelmetProvider } from '@dr.pogodin/react-helmet';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import '@fontsource/syne/700.css';
+import '@fontsource/dm-serif-display/400.css';
+import '@fontsource-variable/inter';
 import App from './App';
 import './styles/globals.css';
 

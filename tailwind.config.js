@@ -57,10 +57,12 @@ export default {
   			sm: 'calc(var(--radius) - 4px)'
   		},
 		fontFamily: {
-			sans: ['var(--font-sans)'],
-			heading: ['var(--font-heading)'],
-			serif: ['var(--font-serif)'],
-			mono: ['var(--font-mono)']
+			display: ['"DM Serif Display"', 'var(--font-serif)', 'serif'],
+			heading: ['"Syne"', 'var(--font-heading)', 'sans-serif'],
+			body: ['"Inter Variable"', 'Inter', 'var(--font-sans)', 'system-ui', 'sans-serif'],
+			sans: ['"Inter Variable"', 'Inter', 'var(--font-sans)', 'system-ui', 'sans-serif'],
+			serif: ['"DM Serif Display"', 'var(--font-serif)', 'serif'],
+			mono: ['var(--font-mono)', 'monospace']
 		},
   		keyframes: {
   			'accordion-down': {
