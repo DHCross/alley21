@@ -4,8 +4,9 @@ import { Link, useLocation } from 'react-router-dom';
 
 const mainNavItems = [
   { href: '/ai-tech', label: 'AI Consulting' },
-  { href: '/vintage', label: 'Vintage Fashion and Treasures' },
   { href: '/self-discovery', label: 'Tools for Self-Discovery' },
+  { href: '/vintage', label: 'Vintage Fashion and Treasures' },
+  { href: '/our-story', label: 'Our Story' },
 ];
 
 export default function Header() {
