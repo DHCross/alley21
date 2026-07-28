@@ -1,0 +1,63 @@
+{
+  "hero": {
+    "eyebrow": "Alley 21 Enterprises",
+    "heading": "Vintage Fashion",
+    "headingAccent": "and Treasures",
+    "subheading": "Alley 21 brings together vintage fashion, distinctive collections, restored and refreshed pieces, and unexpected treasures selected for their character, usefulness, or beauty.",
+    "ctaPrimary": "Browse what's available",
+    "ctaSecondary": "Inquire about a piece"
+  },
+  "manifesto": {
+    "heading": "Selected for character, usefulness, or beauty.",
+    "body": "Every piece in the Alley 21 collection has been chosen deliberately — whether it's a vintage garment, a restored furniture piece, a distinctive accessory, or an unexpected find. Nothing is here by accident."
+  },
+  "categoriesEyebrow": "What we offer",
+  "categoriesHeading": "The collection",
+  "categories": [
+    {
+      "label": "Vintage Fashion",
+      "description": "Carefully sourced vintage clothing and accessories from eras worth revisiting.",
+      "id": "6kzsheTcj8Gg2ifPwPMKY"
+    },
+    {
+      "label": "Art and Collectibles",
+      "description": "Original art, antique porcelain, and distinctive collectibles selected for quality and uncommon appeal.",
+      "id": "_BNDhmNTy_5M3Ord-m-ZP"
+    },
+    {
+      "label": "Designer Accessories",
+      "description": "Vintage and pre-owned designer accessories — bags, scarves, jewelry, and more.",
+      "id": "z4rLtv69swyabCEj95kB1"
+    },
+    {
+      "label": "Furniture and Home",
+      "description": "Restored, refinished, and reimagined furniture pieces and unique home accents. [Add current inventory placeholder when pieces are available.]",
+      "id": "PhV_FxMQzDXcUpt9MYPkI"
+    }
+  ],
+  "pillarsEyebrow": "How we work",
+  "pillarsHeading": "The approach",
+  "pillars": [
+    {
+      "title": "Selective sourcing",
+      "description": "Every piece is chosen for a reason — quality, character, history, or usefulness. We don't collect volume for its own sake.",
+      "id": "ACR61N_PURxzjsDPdzDFF"
+    },
+    {
+      "title": "Honest description",
+      "description": "Items are described accurately. Condition, provenance, and any relevant details are shared clearly.",
+      "id": "zpmWhe_ISqyjo8WfM5Gpc"
+    },
+    {
+      "title": "Local and hands-on",
+      "description": "Sourcing, restoration, and curation happen locally in Bay County. Each piece is handled directly.",
+      "id": "JztVGVcDslsAGZmyeZRk9"
+    }
+  ],
+  "imagePullQuote": "From overlooked",
+  "imagePullQuoteAccent": "to useful again.",
+  "ctaHeading": "Looking for something specific?",
+  "ctaBody": "Items may be available through the Alley 21 website and on marketplaces such as eBay. Reach out to ask about current availability.",
+  "ctaPrimary": "Inquire About Available Pieces",
+  "ctaSecondary": "View on eBay"
+}

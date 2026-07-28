@@ -1,0 +1,52 @@
+{
+  "hero": {
+    "motto": "Making life simple."
+  },
+  "nav": {
+    "exploreLabel": "Explore Alley 21"
+  },
+  "channels": [
+    {
+      "href": "/ai-tech",
+      "navLabel": "AI Consulting",
+      "label": "AI Consulting",
+      "tagline": "Practical technology support for real life",
+      "description": "Practical AI and technology support for small businesses and individuals, including websites, automation, workflows, training, and troubleshooting.",
+      "cta": "Explore AI Consulting",
+      "id": "eXoM0bDvYHnIk9_xCgVzj"
+    },
+    {
+      "href": "/vintage",
+      "navLabel": "Vintage Fashion and Treasures",
+      "label": "Vintage Fashion and Treasures",
+      "tagline": "Vintage, restored, and one-of-a-kind",
+      "description": "Vintage fashion, distinctive collections, restored or refreshed pieces, unique home accents, and unexpected treasures selected for their character, usefulness, or beauty.",
+      "cta": "Explore Vintage and Treasures",
+      "id": "b7Cb1dJPQhi_YIGqo-7ld"
+    },
+    {
+      "href": "/self-discovery",
+      "navLabel": "Tools for Self-Discovery",
+      "label": "Tools for Self-Discovery",
+      "tagline": "Thoughtful tools for clearer self-understanding",
+      "description": "Thoughtful assessments, guided reflection resources, and personal insight tools designed to support clearer self-understanding.",
+      "cta": "Explore Self-Discovery Tools",
+      "id": "6MYgwZmxGEODKvbJGj18h"
+    }
+  ],
+  "mission": {
+    "eyebrow": "The idea behind it all",
+    "heading": "One enterprise. Three clearly separated paths.",
+    "body": "Alley 21 Enterprises brings together practical technology support, vintage fashion and treasures, and tools for self-discovery — each path distinct, each one purposeful.",
+    "tagline": "Making life simple."
+  },
+  "cta": {
+    "eyebrow": "Get in touch",
+    "heading": "Not sure where to start?",
+    "body": "Tell us what you need and we'll point you in the right direction.",
+    "primaryLabel": "Contact us",
+    "secondaryLabel": "Our story"
+  },
+  "sectionLabel": "One enterprise. Three paths.",
+  "sectionHeading": "What we do"
+}

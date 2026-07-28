@@ -1,0 +1,44 @@
+{
+  "principles": [
+    {
+      "heading": "Useful before impressive",
+      "body": "An idea matters when it works under real conditions — not only when it sounds good.",
+      "id": "OwpMq9pPEXm4DKE7ULDfd"
+    },
+    {
+      "heading": "Care in every medium",
+      "body": "Whether the work involves software, furniture, instruction, research, or analysis, details deserve attention.",
+      "id": "wpIr1xHv7PJvbwyI540ur"
+    },
+    {
+      "heading": "Clarity without oversimplifying",
+      "body": "Complex ideas can be made understandable without reducing them to something shallow.",
+      "id": "2qBXHxNKUZyDdnOXNcrmr"
+    },
+    {
+      "heading": "Quality over volume",
+      "body": "We would rather do fewer things well than expand faster than the work can support.",
+      "id": "rhq8bLyo2QDCBYu7S-6Iz"
+    }
+  ],
+  "channels": [
+    {
+      "href": "/ai-tech",
+      "label": "AI Consulting",
+      "body": "Practical AI and technology support for small businesses and individuals — websites, automation, workflows, training, troubleshooting, and classes.",
+      "id": "6Y9auDZOH0TLJXtfqW9kf"
+    },
+    {
+      "href": "/vintage",
+      "label": "Vintage Fashion and Treasures",
+      "body": "Vintage fashion, distinctive collections, restored and refreshed furniture pieces, unique home accents, and unexpected treasures selected for their character, usefulness, or beauty.",
+      "id": "ApRzkuTcxzNPT9WP3TjbC"
+    },
+    {
+      "href": "/self-discovery",
+      "label": "Tools for Self-Discovery",
+      "body": "Thoughtful assessments, guided reflection resources, and personal insight tools — including Raven and The Woven Map — designed to support clearer self-understanding.",
+      "id": "UioOVwUFsjV6DxMVjXx-Y"
+    }
+  ]
+}

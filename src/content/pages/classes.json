@@ -1,0 +1,19 @@
+{
+  "formats": [
+    {
+      "title": "AI & Technology instruction",
+      "description": "Practical training on AI tools, software, workflows, and system setup — for individuals and teams who want to work smarter.",
+      "id": "_KHPvCqt0PgU-oF6l7o5o"
+    },
+    {
+      "title": "Group workshops",
+      "description": "Hands-on sessions for organizations, small businesses, and community groups. Topics and format tailored to the group.",
+      "id": "DGXSWdlZGIpIMYH955J8j"
+    },
+    {
+      "title": "One-on-one sessions",
+      "description": "Focused, personal instruction for people who want to learn at their own pace on topics that matter to them.",
+      "id": "eZ31yGLl7hjUTHX0csdZg"
+    }
+  ]
+}
