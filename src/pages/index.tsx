@@ -84,19 +84,19 @@ export default function HomePage() {
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.3)_0%,rgba(0,0,0,0.05)_60%,rgba(0,0,0,0.45)_100%)] pointer-events-none" />
 
         {/* Centered Road Perspective Typography Overlay */}
-        <div className="absolute inset-0 flex flex-col items-center justify-end pb-8 md:pb-16 text-center pointer-events-none px-4">
+        <div className="absolute inset-0 flex flex-col items-center justify-end pb-28 md:pb-40 lg:pb-48 text-center pointer-events-none px-4">
           <h1 className="sr-only">Alley 21 Enterprises — Making life simple.</h1>
 
           {/* Alley 21 Logo Type Matched to Brand Image Tilted Along Dirt Road Surface */}
           <motion.div
             initial={{ opacity: 0, scale: 0.9, y: 20, rotateX: 30 }}
-            animate={{ opacity: 1, scale: 1, y: 0, rotateX: 24 }}
+            animate={{ opacity: 1, scale: 1, y: 0, rotateX: 22 }}
             transition={{ duration: 1, ease: 'easeOut' as const }}
             style={{ perspective: '600px', transformStyle: 'preserve-3d' }}
-            className="flex flex-col items-center mb-2"
+            className="flex flex-col items-center"
           >
             <div
-              style={{ transform: 'rotateX(24deg)', transformOrigin: 'bottom center' }}
+              style={{ transform: 'rotateX(22deg)', transformOrigin: 'bottom center' }}
               className="flex flex-col items-center"
             >
               <div className="flex items-baseline gap-2">
