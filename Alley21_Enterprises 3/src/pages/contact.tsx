@@ -2,7 +2,7 @@ import { contact } from 'virtual:content';
 import { Helmet } from '@dr.pogodin/react-helmet';
 import { motion } from 'motion/react';
 import { useState } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, Loader2 } from 'lucide-react';
 
 const site = 'https://alley21enterprises.com';
 
@@ -27,11 +27,41 @@ const jsonLd = {
 
 export default function ContactPage() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState<string | null>(null);
   const [area, setArea] = useState('');
 
-  function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    setSubmitted(true);
+    setSubmitting(true);
+    setError(null);
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    const apiKey = import.meta.env.VITE_WEB3FORMS_KEY || '8e36a200-58eb-436f-80cf-7da5931dfe0e';
+    formData.append('access_key', apiKey);
+    formData.append('ccemail', 'sfbreeden@alley21enterprises.com');
+    formData.append('subject', `New Contact Enquiry: ${area || 'General'}`);
+
+    try {
+      const response = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body: formData,
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        setSubmitted(true);
+      } else {
+        setError(data.message || 'Something went wrong. Please try again.');
+      }
+    } catch {
+      setError('An error occurred while sending your message. Please try again later.');
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
@@ -91,6 +121,12 @@ export default function ContactPage() {
                     onSubmit={handleSubmit}
                     className="flex flex-col gap-6"
                   >
+                    {error && (
+                      <div className="p-4 rounded-xl bg-destructive/10 border border-destructive/20 text-destructive text-sm font-medium">
+                        {error}
+                      </div>
+                    )}
+
                     {/* Area */}
                     <motion.div variants={fadeUp} className="flex flex-col gap-2">
                       <label htmlFor="area" className="text-xs font-semibold tracking-widest uppercase text-muted-foreground">
@@ -159,9 +195,14 @@ export default function ContactPage() {
                     <motion.div variants={fadeUp}>
                       <button
                         type="submit"
-                        className="inline-flex items-center gap-2 bg-primary text-background px-8 py-3 rounded-full text-sm font-bold tracking-wide hover:bg-primary/90 transition-colors duration-200"
+                        disabled={submitting}
+                        className="inline-flex items-center gap-2 bg-primary text-background px-8 py-3 rounded-full text-sm font-bold tracking-wide hover:bg-primary/90 transition-colors duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                       >
-                        Send message <ArrowRight size={16} />
+                        {submitting ? (
+                          <>Sending... <Loader2 size={16} className="animate-spin" /></>
+                        ) : (
+                          <>Send message <ArrowRight size={16} /></>
+                        )}
                       </button>
                     </motion.div>
                   </motion.form>
