@@ -83,28 +83,34 @@ export default function HomePage() {
         {/* Center Vignette Radial Gradient for Legibility */}
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(0,0,0,0.3)_0%,rgba(0,0,0,0.05)_60%,rgba(0,0,0,0.45)_100%)] pointer-events-none" />
 
-        {/* Centered Typography Overlay */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center pointer-events-none px-4">
+        {/* Centered Road Perspective Typography Overlay */}
+        <div className="absolute inset-0 flex flex-col items-center justify-end pb-8 md:pb-16 text-center pointer-events-none px-4">
           <h1 className="sr-only">Alley 21 Enterprises — Making life simple.</h1>
 
-          {/* Alley 21 Logo Type Matched to Brand Image */}
+          {/* Alley 21 Logo Type Matched to Brand Image Tilted Along Dirt Road Surface */}
           <motion.div
-            initial={{ opacity: 0, scale: 0.9, y: 10 }}
-            animate={{ opacity: 1, scale: 1, y: 0 }}
+            initial={{ opacity: 0, scale: 0.9, y: 20, rotateX: 30 }}
+            animate={{ opacity: 1, scale: 1, y: 0, rotateX: 24 }}
             transition={{ duration: 1, ease: 'easeOut' as const }}
-            className="flex flex-col items-center"
+            style={{ perspective: '600px', transformStyle: 'preserve-3d' }}
+            className="flex flex-col items-center mb-2"
           >
-            <div className="flex items-baseline gap-2">
-              <span className="font-script text-6xl md:text-8xl lg:text-9xl text-[#FFFDF5] leading-none drop-shadow-[0_4px_18px_rgba(0,0,0,0.95)]">
-                Alley
-              </span>
-              <span className="font-display text-6xl md:text-8xl lg:text-9xl text-[#FFFDF5] leading-none drop-shadow-[0_4px_18px_rgba(0,0,0,0.95)]">
-                21
-              </span>
+            <div
+              style={{ transform: 'rotateX(24deg)', transformOrigin: 'bottom center' }}
+              className="flex flex-col items-center"
+            >
+              <div className="flex items-baseline gap-2">
+                <span className="font-script text-5xl md:text-7xl lg:text-8xl text-[#FFFDF5] leading-none drop-shadow-[0_6px_22px_rgba(0,0,0,0.98)]">
+                  Alley
+                </span>
+                <span className="font-display text-5xl md:text-7xl lg:text-8xl text-[#FFFDF5] leading-none drop-shadow-[0_6px_22px_rgba(0,0,0,0.98)]">
+                  21
+                </span>
+              </div>
+              <p className="font-cinzel text-xs md:text-base lg:text-xl font-bold tracking-[0.45em] uppercase text-[#F4E4BA] mt-2 drop-shadow-[0_4px_14px_rgba(0,0,0,0.98)]">
+                ENTERPRISES
+              </p>
             </div>
-            <p className="font-cinzel text-sm md:text-xl lg:text-2xl font-bold tracking-[0.45em] uppercase text-[#F4E4BA] mt-3 drop-shadow-[0_3px_12px_rgba(0,0,0,0.95)]">
-              ENTERPRISES
-            </p>
           </motion.div>
         </div>
       </section>
