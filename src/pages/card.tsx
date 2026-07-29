@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { Helmet } from '@dr.pogodin/react-helmet';
 import { motion } from 'motion/react';
 import {
@@ -17,8 +17,19 @@ import {
   Sparkle,
   Home as HomeIcon,
   Layers,
+  Cpu,
+  Workflow,
+  Wrench,
+  GraduationCap,
+  Layout,
+  Bot,
+  Zap,
 } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { Link, useSearchParams } from 'react-router-dom';
+
+interface CardPageProps {
+  initialType?: 'vintage' | 'tech';
+}
 
 const cardData = {
   name: 'Stephanie Breeden',
@@ -31,15 +42,39 @@ const cardData = {
   instagram: 'https://www.instagram.com/alley21enterprises/',
   facebook: 'https://www.facebook.com/alley21enterprises/',
   socialHandle: '@alley21enterprises',
-  specialties: [
+  vintageSpecialties: [
     { label: 'Vintage fashion and treasures', icon: Shirt },
     { label: 'Furniture restoration', icon: HomeIcon },
     { label: 'Unique home accents', icon: Sparkles },
     { label: 'Curated collections', icon: Layers },
   ],
+  techServices: [
+    { label: 'Website design support', icon: Layout },
+    { label: 'AI integration', icon: Bot },
+    { label: 'Business automation', icon: Zap },
+    { label: 'Workflow design and improvement', icon: Workflow },
+    { label: 'Technology setup and troubleshooting', icon: Wrench },
+    { label: 'Training and practical guidance', icon: GraduationCap },
+    { label: 'Customized solutions for small businesses', icon: Cpu },
+  ],
 };
 
-export default function CardPage() {
+export default function CardPage({ initialType }: CardPageProps) {
+  const [searchParams, setSearchParams] = useSearchParams();
+  const paramType = searchParams.get('type');
+  
+  const [activeTab, setActiveTab] = useState<'vintage' | 'tech'>(
+    initialType || (paramType === 'tech' ? 'tech' : 'vintage')
+  );
+
+  useEffect(() => {
+    if (initialType) {
+      setActiveTab(initialType);
+    } else if (paramType === 'tech') {
+      setActiveTab('tech');
+    }
+  }, [initialType, paramType]);
+
   const [copied, setCopied] = useState(false);
   const [shared, setShared] = useState(false);
 
@@ -54,11 +89,11 @@ export default function CardPage() {
       try {
         await navigator.share({
           title: `${cardData.name} — ${cardData.company}`,
-          text: `Digital business card for ${cardData.name}, ${cardData.title} at ${cardData.company}`,
+          text: `Digital business card for ${cardData.name}, ${cardData.title} at ${cardData.company} (${activeTab === 'tech' ? 'AI & Tech Services' : 'Vintage & Collections'})`,
           url: window.location.href,
         });
       } catch {
-        // User cancelled or share failed
+        // Share cancelled
       }
     } else {
       navigator.clipboard.writeText(window.location.href);
@@ -68,16 +103,20 @@ export default function CardPage() {
   };
 
   const handleDownloadVCard = () => {
+    const servicesList = activeTab === 'tech'
+      ? 'Website design support, AI integration, Business automation, Workflow design, Tech setup & troubleshooting, Training, Custom solutions.'
+      : 'Vintage fashion and treasures, Furniture restoration, Unique home accents, Curated collections.';
+
     const vCardContent = [
       'BEGIN:VCARD',
       'VERSION:3.0',
       `FN:${cardData.name}`,
       `ORG:${cardData.company}`,
-      `TITLE:${cardData.title}`,
+      `TITLE:${cardData.title} (${activeTab === 'tech' ? 'AI & Tech Services' : 'Vintage & Collections'})`,
       `EMAIL;TYPE=INTERNET,WORK:${cardData.email}`,
       `URL:${cardData.website}`,
       `ADR;TYPE=WORK:;;Bay County;FL;;;USA`,
-      `NOTE:Specialties: Vintage fashion and treasures, Furniture restoration, Unique home accents, Curated collections. Social: ${cardData.socialHandle}`,
+      `NOTE:${servicesList} Social: ${cardData.socialHandle}`,
       'END:VCARD',
     ].join('\r\n');
 
@@ -85,7 +124,7 @@ export default function CardPage() {
     const url = URL.createObjectURL(blob);
     const link = document.createElement('a');
     link.href = url;
-    link.setAttribute('download', 'Stephanie_Breeden_Alley21.vcf');
+    link.setAttribute('download', `Stephanie_Breeden_Alley21_${activeTab}.vcf`);
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
@@ -94,15 +133,19 @@ export default function CardPage() {
   return (
     <>
       <Helmet>
-        <title>Digital Business Card — Stephanie Breeden | Alley 21 Enterprises</title>
+        <title>
+          {activeTab === 'tech'
+            ? 'AI & Tech Services Card — Stephanie Breeden | Alley 21 Enterprises'
+            : 'Digital Business Card — Stephanie Breeden | Alley 21 Enterprises'}
+        </title>
         <meta name="robots" content="noindex, nofollow" />
         <meta
           name="description"
-          content="Digital Business Card for Stephanie Breeden, Owner of Alley 21 Enterprises — Vintage fashion, furniture restoration, home accents, and curated collections in Bay County, FL."
+          content="Digital Business Card for Stephanie Breeden, Owner of Alley 21 Enterprises — AI & Tech Integration, Vintage fashion, furniture restoration, and home accents in Bay County, FL."
         />
       </Helmet>
 
-      <div className="min-h-[90vh] py-12 px-4 flex flex-col items-center justify-center bg-gradient-to-b from-background via-muted/40 to-background">
+      <div className="min-h-[90vh] py-10 px-4 flex flex-col items-center justify-center bg-gradient-to-b from-background via-muted/40 to-background">
         <motion.div
           initial={{ opacity: 0, y: 20, scale: 0.96 }}
           animate={{ opacity: 1, y: 0, scale: 1 }}
@@ -110,7 +153,7 @@ export default function CardPage() {
           className="w-full max-w-xl overflow-hidden rounded-3xl border border-border/80 bg-card shadow-2xl backdrop-blur-md"
         >
           {/* Card Top Brand Banner */}
-          <div className="relative bg-gradient-to-r from-[#2C221E] via-[#3A2D28] to-[#2C221E] px-8 py-10 text-center text-[#FFFDF5]">
+          <div className="relative bg-gradient-to-r from-[#2C221E] via-[#3A2D28] to-[#2C221E] px-8 pt-8 pb-6 text-center text-[#FFFDF5]">
             <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,rgba(198,168,125,0.25)_0%,transparent_70%)] pointer-events-none" />
 
             <Link to="/" className="inline-flex flex-col items-center group transition-transform hover:scale-105">
@@ -126,6 +169,40 @@ export default function CardPage() {
                 ENTERPRISES
               </p>
             </Link>
+
+            {/* Mode Switcher Tabs */}
+            <div className="mt-6 flex justify-center">
+              <div className="inline-flex p-1 rounded-full bg-black/30 backdrop-blur-xs border border-white/10">
+                <button
+                  onClick={() => {
+                    setActiveTab('vintage');
+                    setSearchParams({ type: 'vintage' });
+                  }}
+                  className={`flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold transition-all ${
+                    activeTab === 'vintage'
+                      ? 'bg-[#C6A87D] text-[#2C221E] shadow-sm font-bold'
+                      : 'text-[#FFFDF5]/80 hover:text-[#FFFDF5]'
+                  }`}
+                >
+                  <Shirt size={13} />
+                  <span>Vintage & Collections</span>
+                </button>
+                <button
+                  onClick={() => {
+                    setActiveTab('tech');
+                    setSearchParams({ type: 'tech' });
+                  }}
+                  className={`flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-semibold transition-all ${
+                    activeTab === 'tech'
+                      ? 'bg-[#C6A87D] text-[#2C221E] shadow-sm font-bold'
+                      : 'text-[#FFFDF5]/80 hover:text-[#FFFDF5]'
+                  }`}
+                >
+                  <Cpu size={13} />
+                  <span>AI & Tech Services</span>
+                </button>
+              </div>
+            </div>
           </div>
 
           {/* Main Card Content Body */}
@@ -136,10 +213,10 @@ export default function CardPage() {
                 <h1 className="font-display text-2xl sm:text-3xl font-extrabold text-foreground tracking-tight">
                   {cardData.name}
                 </h1>
-                <p className="font-heading text-lg font-semibold text-primary mt-0.5">
+                <p className="font-heading text-base sm:text-lg font-semibold text-primary mt-0.5">
                   {cardData.title}
                 </p>
-                <div className="flex items-center justify-center sm:justify-start gap-1.5 text-xs text-muted-foreground mt-2">
+                <div className="flex items-center justify-center sm:justify-start gap-1.5 text-xs text-muted-foreground mt-1.5">
                   <MapPin size={14} className="text-primary shrink-0" />
                   <span>{cardData.location}</span>
                 </div>
@@ -165,7 +242,7 @@ export default function CardPage() {
               </div>
             </div>
 
-            {/* Grid Layout: Contact & Social (Left) + Specialties (Right) */}
+            {/* Grid Layout: Contact & Social (Left) + Offerings (Right) */}
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Left Column: Direct Contact Info */}
               <div className="space-y-4">
@@ -240,29 +317,39 @@ export default function CardPage() {
                 </div>
               </div>
 
-              {/* Right Column: Specialties & Offerings */}
+              {/* Right Column: Dynamic Offerings (Vintage vs. Tech) */}
               <div className="space-y-4">
-                <h2 className="text-xs font-bold tracking-widest uppercase text-muted-foreground">
-                  Specialties & Offerings
-                </h2>
+                <div className="flex items-center justify-between">
+                  <h2 className="text-xs font-bold tracking-widest uppercase text-muted-foreground">
+                    {activeTab === 'tech' ? 'Services' : 'Specialties'}
+                  </h2>
+                  <span className="text-[10px] font-semibold tracking-wider uppercase px-2 py-0.5 rounded bg-primary/10 text-primary">
+                    {activeTab === 'tech' ? 'AI & Technology' : 'Vintage & Decor'}
+                  </span>
+                </div>
 
-                <ul className="space-y-3">
-                  {cardData.specialties.map((item, index) => {
-                    const Icon = item.icon;
-                    return (
-                      <li
-                        key={index}
-                        className="flex items-center gap-3 p-3.5 rounded-xl border border-border/60 bg-muted/20 text-foreground"
-                      >
-                        <div className="p-2 rounded-lg bg-primary/10 text-primary shrink-0">
-                          <Icon size={16} />
-                        </div>
-                        <span className="text-xs sm:text-sm font-semibold leading-tight">
-                          {item.label}
-                        </span>
-                      </li>
-                    );
-                  })}
+                <ul className="space-y-2.5">
+                  {(activeTab === 'tech' ? cardData.techServices : cardData.vintageSpecialties).map(
+                    (item, index) => {
+                      const Icon = item.icon;
+                      return (
+                        <motion.li
+                          key={item.label}
+                          initial={{ opacity: 0, x: 10 }}
+                          animate={{ opacity: 1, x: 0 }}
+                          transition={{ duration: 0.3, delay: index * 0.05 }}
+                          className="flex items-center gap-3 p-3 rounded-xl border border-border/60 bg-muted/20 text-foreground"
+                        >
+                          <div className="p-1.5 rounded-lg bg-primary/10 text-primary shrink-0">
+                            <Icon size={15} />
+                          </div>
+                          <span className="text-xs sm:text-sm font-semibold leading-tight">
+                            {item.label}
+                          </span>
+                        </motion.li>
+                      );
+                    }
+                  )}
                 </ul>
               </div>
             </div>
@@ -273,10 +360,10 @@ export default function CardPage() {
                 Bay County, Florida · <Link to="/" className="text-primary hover:underline">Alley 21 Enterprises</Link>
               </p>
               <Link
-                to="/contact"
+                to={activeTab === 'tech' ? '/ai-tech' : '/vintage'}
                 className="inline-flex items-center gap-2 text-xs font-bold text-primary hover:underline"
               >
-                <span>Send a message</span>
+                <span>{activeTab === 'tech' ? 'Explore AI & Tech Solutions' : 'Explore Vintage Collection'}</span>
                 <Sparkle size={12} />
               </Link>
             </div>
