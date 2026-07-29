@@ -8,6 +8,7 @@ const VintagePage = lazy(() => import('./pages/vintage'));
 const SelfDiscoveryPage = lazy(() => import('./pages/self-discovery'));
 const ContactPage = lazy(() => import('./pages/contact'));
 const OurStoryPage = lazy(() => import('./pages/about'));
+const CardPage = lazy(() => import('./pages/card'));
 
 export const routes: RouteObject[] = [
   { path: '/', element: <HomePage /> },
@@ -16,6 +17,10 @@ export const routes: RouteObject[] = [
   { path: '/self-discovery', element: <SelfDiscoveryPage /> },
   { path: '/our-story', element: <OurStoryPage /> },
   { path: '/contact', element: <ContactPage /> },
+  { path: '/card', element: <CardPage /> },
+  { path: '/vcard', element: <Navigate to="/card" replace /> },
+  { path: '/stephanie', element: <Navigate to="/card" replace /> },
+  { path: '/stephanie-breeden', element: <Navigate to="/card" replace /> },
   { path: '/furniture', element: <Navigate to="/vintage" replace /> },
   { path: '/classes', element: <Navigate to="/ai-tech" replace /> },
   { path: '/collections', element: <Navigate to="/vintage" replace /> },
