@@ -1,0 +1,784 @@
+{
+  "pages/home/hero": {
+    "mediaType": "image",
+    "currentUrl": "/airo-assets/uploads/pages-home-hero-f4765d96.png",
+    "searchQuery": "",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/2181493783",
+      "https://img1.wsimg.com/isteam/getty/2261783552",
+      "https://img1.wsimg.com/isteam/getty/1170708952",
+      "https://img1.wsimg.com/isteam/getty/1219187707",
+      "https://img1.wsimg.com/isteam/getty/186860378",
+      "https://img1.wsimg.com/isteam/getty/183804380",
+      "https://img1.wsimg.com/isteam/getty/2278232517"
+    ],
+    "userModified": true,
+    "createdAt": "2026-06-24T18:47:11.326Z",
+    "lastUpdated": "2026-07-15T18:50:04.445Z",
+    "alternativeGettyIds": [
+      "2181493783",
+      "2261783552",
+      "1170708952",
+      "1219187707",
+      "186860378",
+      "183804380",
+      "2278232517"
+    ],
+    "orientations": "horizontal",
+    "compositions": "wide_shot,full_frame",
+    "moods": "vivid,bold,warm",
+    "minimumSize": "x_large",
+    "uploadSources": {
+      "/airo-assets/uploads/pages-home-hero-f4765d96.png": "khytrw3fsc_1784141392685_file_FvI376DTg9.png"
+    },
+    "uploadContentHash": "c8c3cbe1fa564392ab3e8eb1242137998b58c3c4f8381a64c631ae0eb718b6c7"
+  },
+  "pages/home/channel-vintage": {
+    "mediaType": "generated",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2220517489",
+    "searchQuery": "vintage objects arranged flat lay tabletop",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/859771166",
+      "https://img1.wsimg.com/isteam/getty/1441176341",
+      "https://img1.wsimg.com/isteam/getty/1746893048",
+      "https://img1.wsimg.com/isteam/getty/1465897230",
+      "https://img1.wsimg.com/isteam/getty/1465897230"
+    ],
+    "userModified": true,
+    "createdAt": "2026-06-24T18:47:12.043Z",
+    "lastUpdated": "2026-07-21T19:09:12.860Z",
+    "gettyId": "2220517489",
+    "alternativeGettyIds": [
+      "859771166",
+      "1441176341",
+      "1746893048",
+      "1465897230"
+    ],
+    "orientations": "horizontal",
+    "moods": "warm,vivid",
+    "caption": "vintage objects arranged flat lay tabletop",
+    "aiGeneratedUrls": [
+      "/airo-assets/uploads/a-curated-flat-lay-or-tabletop-arrangeme-kVXzvt.png"
+    ]
+  },
+  "pages/home/channel-art": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2174023008",
+    "searchQuery": "art wall decor gallery curated home interior",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/1688317717",
+      "https://img1.wsimg.com/isteam/getty/1357104614"
+    ],
+    "userModified": false,
+    "createdAt": "2026-06-24T18:47:12.995Z",
+    "lastUpdated": "2026-06-24T18:47:12.995Z",
+    "gettyId": "2174023008",
+    "alternativeGettyIds": [
+      "1688317717",
+      "1357104614"
+    ],
+    "orientations": "horizontal",
+    "moods": "bold,vivid"
+  },
+  "pages/home/channel-clothing": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2190611562",
+    "searchQuery": "vintage clothing accessories resale thrift fashion editorial",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/2276304535",
+      "https://img1.wsimg.com/isteam/getty/2256534377"
+    ],
+    "userModified": false,
+    "createdAt": "2026-06-24T18:47:14.773Z",
+    "lastUpdated": "2026-06-24T18:47:14.773Z",
+    "gettyId": "2190611562",
+    "alternativeGettyIds": [
+      "2276304535",
+      "2256534377"
+    ],
+    "orientations": "horizontal",
+    "moods": "bold,warm"
+  },
+  "pages/home/channel-collectibles": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2143591580",
+    "searchQuery": "collectibles antiques curiosities objects shelf display",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/178094346",
+      "https://img1.wsimg.com/isteam/getty/1284445906"
+    ],
+    "userModified": false,
+    "createdAt": "2026-06-24T18:47:15.089Z",
+    "lastUpdated": "2026-06-24T18:47:15.089Z",
+    "gettyId": "2143591580",
+    "alternativeGettyIds": [
+      "178094346",
+      "1284445906"
+    ],
+    "orientations": "horizontal",
+    "moods": "warm,dramatic"
+  },
+  "pages/home/channel-blog": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2223481518",
+    "searchQuery": "editorial lifestyle writing desk vintage journal storytelling",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/1445021338",
+      "https://img1.wsimg.com/isteam/getty/467745348"
+    ],
+    "userModified": false,
+    "createdAt": "2026-06-24T18:47:15.897Z",
+    "lastUpdated": "2026-06-24T18:47:15.897Z",
+    "gettyId": "2223481518",
+    "alternativeGettyIds": [
+      "1445021338",
+      "467745348"
+    ],
+    "orientations": "horizontal",
+    "moods": "warm,natural"
+  },
+  "logo/horizontal": {
+    "mediaType": "logo",
+    "currentUrl": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/77307366-5945-4f81-b0f9-cfed8bb9e9cf/horizontal-transparent-dfe060d5-48b5-458b-b326-ff19a72d0be6/logo-logo.png",
+    "searchQuery": "A horizontal logo for \"Alley21 Enterprises\" — a refined ink-sketch illustration ",
+    "alternatives": [
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/a40b9f2a-d437-4035-82a3-4a6ddcbe4759/horizontal-transparent-d83a2ba5-e329-4b33-b6af-cf8326b2e372/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/28ebc9d9-0658-4831-8a81-e156365412f4/horizontal-transparent-e4967d92-1cbd-4c15-ad60-e8a6892e9be2/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/d550822c-00ed-4130-b56d-41d91f4681af/horizontal-transparent-f1a1fdf2-a9c0-4f9e-85a9-1f54a19940a0/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/89d673d1-bfca-4898-9503-509343f6950b/horizontal-transparent-4a488a66-9253-4f7b-8aca-a4c0bb10ec40/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/fd4fc3ee-5789-404f-bdbf-0ff161baa8df/horizontal-transparent-4a67428b-a101-4aa1-b11d-1b514feaec4c/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/6ff39b58-f6e1-406f-a296-fe2927bba59a/horizontal-transparent-1b0aae01-15eb-4def-b97a-d3adcfb38976/logo-alley21-enterprises.png",
+      "/airo-assets/uploads/airo-logo-shimmer-horizontal.svg"
+    ],
+    "solidUrlMap": {
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/6ff39b58-f6e1-406f-a296-fe2927bba59a/horizontal-transparent-1b0aae01-15eb-4def-b97a-d3adcfb38976/logo-alley21-enterprises.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/6ff39b58-f6e1-406f-a296-fe2927bba59a/horizontal-solid-1b0aae01-15eb-4def-b97a-d3adcfb38976/logo-alley21-enterprises.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/fd4fc3ee-5789-404f-bdbf-0ff161baa8df/horizontal-transparent-4a67428b-a101-4aa1-b11d-1b514feaec4c/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/fd4fc3ee-5789-404f-bdbf-0ff161baa8df/horizontal-solid-4a67428b-a101-4aa1-b11d-1b514feaec4c/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/89d673d1-bfca-4898-9503-509343f6950b/horizontal-transparent-4a488a66-9253-4f7b-8aca-a4c0bb10ec40/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/89d673d1-bfca-4898-9503-509343f6950b/horizontal-solid-4a488a66-9253-4f7b-8aca-a4c0bb10ec40/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/d550822c-00ed-4130-b56d-41d91f4681af/horizontal-transparent-f1a1fdf2-a9c0-4f9e-85a9-1f54a19940a0/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/d550822c-00ed-4130-b56d-41d91f4681af/horizontal-solid-f1a1fdf2-a9c0-4f9e-85a9-1f54a19940a0/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/28ebc9d9-0658-4831-8a81-e156365412f4/horizontal-transparent-e4967d92-1cbd-4c15-ad60-e8a6892e9be2/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/28ebc9d9-0658-4831-8a81-e156365412f4/horizontal-solid-e4967d92-1cbd-4c15-ad60-e8a6892e9be2/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/a40b9f2a-d437-4035-82a3-4a6ddcbe4759/horizontal-transparent-d83a2ba5-e329-4b33-b6af-cf8326b2e372/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/a40b9f2a-d437-4035-82a3-4a6ddcbe4759/horizontal-solid-d83a2ba5-e329-4b33-b6af-cf8326b2e372/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/77307366-5945-4f81-b0f9-cfed8bb9e9cf/horizontal-transparent-dfe060d5-48b5-458b-b326-ff19a72d0be6/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/77307366-5945-4f81-b0f9-cfed8bb9e9cf/horizontal-solid-dfe060d5-48b5-458b-b326-ff19a72d0be6/logo-logo.png"
+    },
+    "reversedUrlMap": {
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/6ff39b58-f6e1-406f-a296-fe2927bba59a/horizontal-transparent-1b0aae01-15eb-4def-b97a-d3adcfb38976/logo-alley21-enterprises.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/6ff39b58-f6e1-406f-a296-fe2927bba59a/horizontal-reversed-1b0aae01-15eb-4def-b97a-d3adcfb38976/logo-alley21-enterprises.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/fd4fc3ee-5789-404f-bdbf-0ff161baa8df/horizontal-transparent-4a67428b-a101-4aa1-b11d-1b514feaec4c/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/fd4fc3ee-5789-404f-bdbf-0ff161baa8df/horizontal-reversed-4a67428b-a101-4aa1-b11d-1b514feaec4c/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/89d673d1-bfca-4898-9503-509343f6950b/horizontal-transparent-4a488a66-9253-4f7b-8aca-a4c0bb10ec40/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/89d673d1-bfca-4898-9503-509343f6950b/horizontal-reversed-4a488a66-9253-4f7b-8aca-a4c0bb10ec40/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/d550822c-00ed-4130-b56d-41d91f4681af/horizontal-transparent-f1a1fdf2-a9c0-4f9e-85a9-1f54a19940a0/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/d550822c-00ed-4130-b56d-41d91f4681af/horizontal-reversed-f1a1fdf2-a9c0-4f9e-85a9-1f54a19940a0/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/28ebc9d9-0658-4831-8a81-e156365412f4/horizontal-transparent-e4967d92-1cbd-4c15-ad60-e8a6892e9be2/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/28ebc9d9-0658-4831-8a81-e156365412f4/horizontal-reversed-e4967d92-1cbd-4c15-ad60-e8a6892e9be2/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/a40b9f2a-d437-4035-82a3-4a6ddcbe4759/horizontal-transparent-d83a2ba5-e329-4b33-b6af-cf8326b2e372/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/a40b9f2a-d437-4035-82a3-4a6ddcbe4759/horizontal-reversed-d83a2ba5-e329-4b33-b6af-cf8326b2e372/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/77307366-5945-4f81-b0f9-cfed8bb9e9cf/horizontal-transparent-dfe060d5-48b5-458b-b326-ff19a72d0be6/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/77307366-5945-4f81-b0f9-cfed8bb9e9cf/horizontal-reversed-dfe060d5-48b5-458b-b326-ff19a72d0be6/logo-logo.png"
+    },
+    "reversedSolidUrlMap": {
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/6ff39b58-f6e1-406f-a296-fe2927bba59a/horizontal-transparent-1b0aae01-15eb-4def-b97a-d3adcfb38976/logo-alley21-enterprises.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/6ff39b58-f6e1-406f-a296-fe2927bba59a/horizontal-reversed-solid-1b0aae01-15eb-4def-b97a-d3adcfb38976/logo-alley21-enterprises.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/fd4fc3ee-5789-404f-bdbf-0ff161baa8df/horizontal-transparent-4a67428b-a101-4aa1-b11d-1b514feaec4c/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/fd4fc3ee-5789-404f-bdbf-0ff161baa8df/horizontal-reversed-solid-4a67428b-a101-4aa1-b11d-1b514feaec4c/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/89d673d1-bfca-4898-9503-509343f6950b/horizontal-transparent-4a488a66-9253-4f7b-8aca-a4c0bb10ec40/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/89d673d1-bfca-4898-9503-509343f6950b/horizontal-reversed-solid-4a488a66-9253-4f7b-8aca-a4c0bb10ec40/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/d550822c-00ed-4130-b56d-41d91f4681af/horizontal-transparent-f1a1fdf2-a9c0-4f9e-85a9-1f54a19940a0/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/d550822c-00ed-4130-b56d-41d91f4681af/horizontal-reversed-solid-f1a1fdf2-a9c0-4f9e-85a9-1f54a19940a0/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/28ebc9d9-0658-4831-8a81-e156365412f4/horizontal-transparent-e4967d92-1cbd-4c15-ad60-e8a6892e9be2/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/28ebc9d9-0658-4831-8a81-e156365412f4/horizontal-reversed-solid-e4967d92-1cbd-4c15-ad60-e8a6892e9be2/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/a40b9f2a-d437-4035-82a3-4a6ddcbe4759/horizontal-transparent-d83a2ba5-e329-4b33-b6af-cf8326b2e372/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/a40b9f2a-d437-4035-82a3-4a6ddcbe4759/horizontal-reversed-solid-d83a2ba5-e329-4b33-b6af-cf8326b2e372/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/77307366-5945-4f81-b0f9-cfed8bb9e9cf/horizontal-transparent-dfe060d5-48b5-458b-b326-ff19a72d0be6/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/77307366-5945-4f81-b0f9-cfed8bb9e9cf/horizontal-reversed-solid-dfe060d5-48b5-458b-b326-ff19a72d0be6/logo-logo.png"
+    },
+    "mockupUrlMap": {
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/6ff39b58-f6e1-406f-a296-fe2927bba59a/horizontal-transparent-1b0aae01-15eb-4def-b97a-d3adcfb38976/logo-alley21-enterprises.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/6ff39b58-f6e1-406f-a296-fe2927bba59a/horizontal-mockup-1b0aae01-15eb-4def-b97a-d3adcfb38976/logo-alley21-enterprises.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/fd4fc3ee-5789-404f-bdbf-0ff161baa8df/horizontal-transparent-4a67428b-a101-4aa1-b11d-1b514feaec4c/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/fd4fc3ee-5789-404f-bdbf-0ff161baa8df/horizontal-mockup-4a67428b-a101-4aa1-b11d-1b514feaec4c/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/89d673d1-bfca-4898-9503-509343f6950b/horizontal-transparent-4a488a66-9253-4f7b-8aca-a4c0bb10ec40/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/89d673d1-bfca-4898-9503-509343f6950b/horizontal-mockup-4a488a66-9253-4f7b-8aca-a4c0bb10ec40/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/d550822c-00ed-4130-b56d-41d91f4681af/horizontal-transparent-f1a1fdf2-a9c0-4f9e-85a9-1f54a19940a0/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/d550822c-00ed-4130-b56d-41d91f4681af/horizontal-mockup-f1a1fdf2-a9c0-4f9e-85a9-1f54a19940a0/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/28ebc9d9-0658-4831-8a81-e156365412f4/horizontal-transparent-e4967d92-1cbd-4c15-ad60-e8a6892e9be2/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/28ebc9d9-0658-4831-8a81-e156365412f4/horizontal-mockup-e4967d92-1cbd-4c15-ad60-e8a6892e9be2/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/a40b9f2a-d437-4035-82a3-4a6ddcbe4759/horizontal-transparent-d83a2ba5-e329-4b33-b6af-cf8326b2e372/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/a40b9f2a-d437-4035-82a3-4a6ddcbe4759/horizontal-mockup-d83a2ba5-e329-4b33-b6af-cf8326b2e372/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/77307366-5945-4f81-b0f9-cfed8bb9e9cf/horizontal-transparent-dfe060d5-48b5-458b-b326-ff19a72d0be6/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/77307366-5945-4f81-b0f9-cfed8bb9e9cf/horizontal-mockup-dfe060d5-48b5-458b-b326-ff19a72d0be6/logo-logo.png"
+    },
+    "landscapeMockupUrlMap": {
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/6ff39b58-f6e1-406f-a296-fe2927bba59a/horizontal-transparent-1b0aae01-15eb-4def-b97a-d3adcfb38976/logo-alley21-enterprises.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/6ff39b58-f6e1-406f-a296-fe2927bba59a/horizontal-mockup-1b0aae01-15eb-4def-b97a-d3adcfb38976/logo-alley21-enterprises.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/fd4fc3ee-5789-404f-bdbf-0ff161baa8df/horizontal-transparent-4a67428b-a101-4aa1-b11d-1b514feaec4c/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/fd4fc3ee-5789-404f-bdbf-0ff161baa8df/horizontal-mockup-4a67428b-a101-4aa1-b11d-1b514feaec4c/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/89d673d1-bfca-4898-9503-509343f6950b/horizontal-transparent-4a488a66-9253-4f7b-8aca-a4c0bb10ec40/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/89d673d1-bfca-4898-9503-509343f6950b/horizontal-mockup-4a488a66-9253-4f7b-8aca-a4c0bb10ec40/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/d550822c-00ed-4130-b56d-41d91f4681af/horizontal-transparent-f1a1fdf2-a9c0-4f9e-85a9-1f54a19940a0/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/d550822c-00ed-4130-b56d-41d91f4681af/horizontal-mockup-f1a1fdf2-a9c0-4f9e-85a9-1f54a19940a0/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/28ebc9d9-0658-4831-8a81-e156365412f4/horizontal-transparent-e4967d92-1cbd-4c15-ad60-e8a6892e9be2/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/28ebc9d9-0658-4831-8a81-e156365412f4/horizontal-mockup-e4967d92-1cbd-4c15-ad60-e8a6892e9be2/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/a40b9f2a-d437-4035-82a3-4a6ddcbe4759/horizontal-transparent-d83a2ba5-e329-4b33-b6af-cf8326b2e372/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/a40b9f2a-d437-4035-82a3-4a6ddcbe4759/horizontal-mockup-d83a2ba5-e329-4b33-b6af-cf8326b2e372/logo-logo.png",
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/77307366-5945-4f81-b0f9-cfed8bb9e9cf/horizontal-transparent-dfe060d5-48b5-458b-b326-ff19a72d0be6/logo-logo.png": "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/77307366-5945-4f81-b0f9-cfed8bb9e9cf/horizontal-mockup-dfe060d5-48b5-458b-b326-ff19a72d0be6/logo-logo.png"
+    },
+    "logoSourceMap": {
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/6ff39b58-f6e1-406f-a296-fe2927bba59a/horizontal-transparent-1b0aae01-15eb-4def-b97a-d3adcfb38976/logo-alley21-enterprises.png": {
+        "sessionId": "6ff39b58-f6e1-406f-a296-fe2927bba59a",
+        "logoId": "1b0aae01-15eb-4def-b97a-d3adcfb38976"
+      },
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/fd4fc3ee-5789-404f-bdbf-0ff161baa8df/horizontal-transparent-4a67428b-a101-4aa1-b11d-1b514feaec4c/logo-logo.png": {
+        "sessionId": "fd4fc3ee-5789-404f-bdbf-0ff161baa8df",
+        "logoId": "4a67428b-a101-4aa1-b11d-1b514feaec4c"
+      },
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/89d673d1-bfca-4898-9503-509343f6950b/horizontal-transparent-4a488a66-9253-4f7b-8aca-a4c0bb10ec40/logo-logo.png": {
+        "sessionId": "89d673d1-bfca-4898-9503-509343f6950b",
+        "logoId": "4a488a66-9253-4f7b-8aca-a4c0bb10ec40"
+      },
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/d550822c-00ed-4130-b56d-41d91f4681af/horizontal-transparent-f1a1fdf2-a9c0-4f9e-85a9-1f54a19940a0/logo-logo.png": {
+        "sessionId": "d550822c-00ed-4130-b56d-41d91f4681af",
+        "logoId": "f1a1fdf2-a9c0-4f9e-85a9-1f54a19940a0"
+      },
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/28ebc9d9-0658-4831-8a81-e156365412f4/horizontal-transparent-e4967d92-1cbd-4c15-ad60-e8a6892e9be2/logo-logo.png": {
+        "sessionId": "28ebc9d9-0658-4831-8a81-e156365412f4",
+        "logoId": "e4967d92-1cbd-4c15-ad60-e8a6892e9be2"
+      },
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/a40b9f2a-d437-4035-82a3-4a6ddcbe4759/horizontal-transparent-d83a2ba5-e329-4b33-b6af-cf8326b2e372/logo-logo.png": {
+        "sessionId": "a40b9f2a-d437-4035-82a3-4a6ddcbe4759",
+        "logoId": "d83a2ba5-e329-4b33-b6af-cf8326b2e372"
+      },
+      "https://isteam.wsimg.com/genai-assistant/logoagent/customer/fdc3e004-911a-4c77-8179-917f7cedc3a1/session/77307366-5945-4f81-b0f9-cfed8bb9e9cf/horizontal-transparent-dfe060d5-48b5-458b-b326-ff19a72d0be6/logo-logo.png": {
+        "sessionId": "77307366-5945-4f81-b0f9-cfed8bb9e9cf",
+        "logoId": "dfe060d5-48b5-458b-b326-ff19a72d0be6"
+      }
+    },
+    "userModified": false,
+    "createdAt": "2026-06-24T18:47:22.975Z",
+    "lastUpdated": "2026-06-24T19:40:36.047Z"
+  },
+  "logo/reference-upload": {
+    "mediaType": "image",
+    "currentUrl": "/airo-assets/uploads/logo-reference-upload-f64f50d1.png",
+    "searchQuery": "",
+    "alternatives": [],
+    "userModified": true,
+    "createdAt": "2026-06-24T18:56:18.402Z",
+    "lastUpdated": "2026-06-24T18:56:18.402Z",
+    "uploadSources": {
+      "/airo-assets/uploads/logo-reference-upload-f64f50d1.png": "khytrw3fsc_1782327259326_file_L8LDBpN4Po.png"
+    },
+    "uploadContentHash": "ddb3607d2d609458d60cdbc29fd5a79817b429f787c3536c97060e86fffa2010",
+    "naturalOrientation": "square"
+  },
+  "pages/home/channel-furniture": {
+    "mediaType": "generated",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2196086482",
+    "searchQuery": "wooden furniture mid-refinishing workshop scene",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/946759210",
+      "https://img1.wsimg.com/isteam/getty/1879512171",
+      "https://img1.wsimg.com/isteam/getty/895813282",
+      "https://img1.wsimg.com/isteam/getty/2150416827",
+      "https://img1.wsimg.com/isteam/getty/2150416827"
+    ],
+    "userModified": true,
+    "createdAt": "2026-06-24T19:49:28.306Z",
+    "lastUpdated": "2026-07-21T19:09:10.305Z",
+    "gettyId": "2196086482",
+    "alternativeGettyIds": [
+      "946759210",
+      "1879512171",
+      "895813282",
+      "2150416827"
+    ],
+    "orientations": "horizontal",
+    "moods": "warm,bold",
+    "caption": "wooden furniture mid-refinishing workshop scene",
+    "aiGeneratedUrls": [
+      "/airo-assets/uploads/a-wooden-dresser-or-side-table-mid-refin-QEuUtI.png"
+    ]
+  },
+  "pages/home/channel-raven-calder": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/1412523924",
+    "searchQuery": "elegant mysterious dark feminine brand lifestyle editorial moody",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/2191513908",
+      "https://img1.wsimg.com/isteam/getty/2180441139",
+      "https://img1.wsimg.com/isteam/getty/1302611178",
+      "https://img1.wsimg.com/isteam/getty/174833263"
+    ],
+    "userModified": false,
+    "createdAt": "2026-06-24T19:49:34.641Z",
+    "lastUpdated": "2026-06-24T19:49:34.641Z",
+    "gettyId": "1412523924",
+    "alternativeGettyIds": [
+      "2191513908",
+      "2180441139",
+      "1302611178",
+      "174833263"
+    ],
+    "orientations": "horizontal",
+    "moods": "dramatic,bold"
+  },
+  "logo/alley21-transparent": {
+    "mediaType": "image",
+    "currentUrl": "/airo-assets/uploads/logo-alley21-transparent-4c8cba4e.png",
+    "searchQuery": "",
+    "alternatives": [],
+    "userModified": true,
+    "createdAt": "2026-07-15T18:44:22.808Z",
+    "lastUpdated": "2026-07-15T18:44:22.808Z",
+    "uploadSources": {
+      "/airo-assets/uploads/logo-alley21-transparent-4c8cba4e.png": "khytrw3fsc_1784141007379_file_dDzeHL5vQB.png"
+    },
+    "uploadContentHash": "bb2572b33b4b1ffcc904a9818dff9b2b4536e4f83ad3cc17d6982e47d33d074e",
+    "naturalOrientation": "square"
+  },
+  "pages/ai-tech/hero": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2170889984",
+    "searchQuery": "AI technology consulting workflow automation modern office digital transformation",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/1779862482",
+      "https://img1.wsimg.com/isteam/getty/1471902196",
+      "https://img1.wsimg.com/isteam/getty/1161348979",
+      "https://img1.wsimg.com/isteam/getty/2166183185",
+      "https://img1.wsimg.com/isteam/getty/1674601386"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:06:19.028Z",
+    "lastUpdated": "2026-07-15T19:06:19.028Z",
+    "gettyId": "2170889984",
+    "alternativeGettyIds": [
+      "1779862482",
+      "1471902196",
+      "1161348979",
+      "2166183185",
+      "1674601386"
+    ],
+    "orientations": "horizontal",
+    "moods": "bold,cool",
+    "minimumSize": "x_large"
+  },
+  "pages/ai-tech/service-1": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2275627404",
+    "searchQuery": "AI workflow automation process diagram technology solutions",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/2268289476",
+      "https://img1.wsimg.com/isteam/getty/2239914665",
+      "https://img1.wsimg.com/isteam/getty/2238014448"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:06:20.839Z",
+    "lastUpdated": "2026-07-15T19:06:20.839Z",
+    "gettyId": "2275627404",
+    "alternativeGettyIds": [
+      "2268289476",
+      "2239914665",
+      "2238014448"
+    ],
+    "orientations": "horizontal",
+    "moods": "cool,bold"
+  },
+  "pages/ai-tech/service-2": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2255403527",
+    "searchQuery": "business consulting strategy meeting technology integration",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/2234406093",
+      "https://img1.wsimg.com/isteam/getty/1947499362",
+      "https://img1.wsimg.com/isteam/getty/2237933550"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:06:23.180Z",
+    "lastUpdated": "2026-07-15T19:06:23.180Z",
+    "gettyId": "2255403527",
+    "alternativeGettyIds": [
+      "2234406093",
+      "1947499362",
+      "2237933550"
+    ],
+    "orientations": "horizontal",
+    "moods": "warm,natural"
+  },
+  "pages/furniture/hero": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2193129842",
+    "searchQuery": "restored painted furniture workshop vintage pieces reimagined elegant",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/2161592230",
+      "https://img1.wsimg.com/isteam/getty/1007164120",
+      "https://img1.wsimg.com/isteam/getty/1390178967",
+      "https://img1.wsimg.com/isteam/getty/1405186714",
+      "https://img1.wsimg.com/isteam/getty/935373460"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:10:03.571Z",
+    "lastUpdated": "2026-07-15T19:10:03.571Z",
+    "gettyId": "2193129842",
+    "alternativeGettyIds": [
+      "2161592230",
+      "1007164120",
+      "1390178967",
+      "1405186714",
+      "935373460"
+    ],
+    "orientations": "horizontal",
+    "moods": "warm,natural"
+  },
+  "pages/furniture/piece-1": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2217199211",
+    "searchQuery": "beautifully restored antique dresser painted chalk paint detail",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/183798309",
+      "https://img1.wsimg.com/isteam/getty/2284555405",
+      "https://img1.wsimg.com/isteam/getty/2270722482",
+      "https://img1.wsimg.com/isteam/getty/2208008330"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:10:09.639Z",
+    "lastUpdated": "2026-07-15T19:10:09.639Z",
+    "gettyId": "2217199211",
+    "alternativeGettyIds": [
+      "183798309",
+      "2284555405",
+      "2270722482",
+      "2208008330"
+    ],
+    "orientations": "vertical",
+    "moods": "warm,natural"
+  },
+  "pages/furniture/piece-2": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2265683645",
+    "searchQuery": "vintage armchair reupholstered elegant living room styled",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/665037946",
+      "https://img1.wsimg.com/isteam/getty/2202461169",
+      "https://img1.wsimg.com/isteam/getty/1148865220",
+      "https://img1.wsimg.com/isteam/getty/1345829616"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:10:10.924Z",
+    "lastUpdated": "2026-07-15T19:10:10.924Z",
+    "gettyId": "2265683645",
+    "alternativeGettyIds": [
+      "665037946",
+      "2202461169",
+      "1148865220",
+      "1345829616"
+    ],
+    "orientations": "vertical",
+    "moods": "warm,bold"
+  },
+  "pages/furniture/piece-3": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2247050190",
+    "searchQuery": "refinished wooden side table mid century modern styled home",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/482626698",
+      "https://img1.wsimg.com/isteam/getty/2255452453",
+      "https://img1.wsimg.com/isteam/getty/1550756506",
+      "https://img1.wsimg.com/isteam/getty/1323848993"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:10:12.313Z",
+    "lastUpdated": "2026-07-15T19:10:12.313Z",
+    "gettyId": "2247050190",
+    "alternativeGettyIds": [
+      "482626698",
+      "2255452453",
+      "1550756506",
+      "1323848993"
+    ],
+    "orientations": "vertical",
+    "moods": "natural,warm"
+  },
+  "pages/furniture/process": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/978993080",
+    "searchQuery": "furniture restoration workshop sanding painting craftsmanship hands",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/1127636763",
+      "https://img1.wsimg.com/isteam/getty/1152664043",
+      "https://img1.wsimg.com/isteam/getty/1015564968",
+      "https://img1.wsimg.com/isteam/getty/1187004376"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:10:13.564Z",
+    "lastUpdated": "2026-07-15T19:10:13.564Z",
+    "gettyId": "978993080",
+    "alternativeGettyIds": [
+      "1127636763",
+      "1152664043",
+      "1015564968",
+      "1187004376"
+    ],
+    "orientations": "horizontal",
+    "moods": "warm,natural"
+  },
+  "pages/vintage/category-collectibles": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/172173701",
+    "searchQuery": "antique collectibles porcelain figurines vintage treasures display shelf",
+    "alternatives": [],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:33:59.612Z",
+    "lastUpdated": "2026-07-15T19:33:59.612Z",
+    "gettyId": "172173701",
+    "orientations": "vertical",
+    "moods": "warm,dramatic"
+  },
+  "pages/vintage/sourcing": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2201366283",
+    "searchQuery": "antique market flea market treasure hunting vintage finds curated",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/1359307187",
+      "https://img1.wsimg.com/isteam/getty/889657986",
+      "https://img1.wsimg.com/isteam/getty/2192980104",
+      "https://img1.wsimg.com/isteam/getty/2204734516"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:34:01.446Z",
+    "lastUpdated": "2026-07-15T19:34:01.446Z",
+    "gettyId": "2201366283",
+    "alternativeGettyIds": [
+      "1359307187",
+      "889657986",
+      "2192980104",
+      "2204734516"
+    ],
+    "orientations": "horizontal",
+    "moods": "warm,natural"
+  },
+  "pages/vintage/hero": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2193243617",
+    "searchQuery": "vintage curated collection antique treasures editorial elegant dark moody",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/853418570",
+      "https://img1.wsimg.com/isteam/getty/1919542678",
+      "https://img1.wsimg.com/isteam/getty/1783595503",
+      "https://img1.wsimg.com/isteam/getty/1203515884",
+      "https://img1.wsimg.com/isteam/getty/1287655911"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:34:06.985Z",
+    "lastUpdated": "2026-07-15T19:34:06.985Z",
+    "gettyId": "2193243617",
+    "alternativeGettyIds": [
+      "853418570",
+      "1919542678",
+      "1783595503",
+      "1203515884",
+      "1287655911"
+    ],
+    "orientations": "horizontal",
+    "moods": "dramatic,warm"
+  },
+  "pages/vintage/category-fashion": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/1492999039",
+    "searchQuery": "vintage clothing boutique rack styled editorial fashion",
+    "alternatives": [],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:34:10.175Z",
+    "lastUpdated": "2026-07-15T19:34:10.175Z",
+    "gettyId": "1492999039",
+    "orientations": "vertical",
+    "moods": "warm,bold"
+  },
+  "pages/vintage/category-art": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/808618008",
+    "searchQuery": "antique framed artwork gallery wall fine art collection",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/2218894858",
+      "https://img1.wsimg.com/isteam/getty/1370126077",
+      "https://img1.wsimg.com/isteam/getty/2181389216",
+      "https://img1.wsimg.com/isteam/getty/855191692"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:34:10.404Z",
+    "lastUpdated": "2026-07-15T19:34:10.404Z",
+    "gettyId": "808618008",
+    "alternativeGettyIds": [
+      "2218894858",
+      "1370126077",
+      "2181389216",
+      "855191692"
+    ],
+    "orientations": "vertical",
+    "moods": "dramatic,natural"
+  },
+  "pages/vintage/category-accessories": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/1441376285",
+    "searchQuery": "luxury vintage designer accessories handbag jewellery styled",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/1928288212"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:34:11.585Z",
+    "lastUpdated": "2026-07-15T19:34:11.585Z",
+    "gettyId": "1441376285",
+    "alternativeGettyIds": [
+      "1928288212"
+    ],
+    "orientations": "vertical",
+    "moods": "bold,warm"
+  },
+  "pages/self-discovery/hero": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/1338220788",
+    "searchQuery": "self discovery personal growth journey bold dramatic light shadow editorial",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/535770225",
+      "https://img1.wsimg.com/isteam/getty/2246651373",
+      "https://img1.wsimg.com/isteam/getty/1345691725",
+      "https://img1.wsimg.com/isteam/getty/97970766",
+      "https://img1.wsimg.com/isteam/getty/1333766853"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:58:11.722Z",
+    "lastUpdated": "2026-07-15T19:58:11.722Z",
+    "gettyId": "1338220788",
+    "alternativeGettyIds": [
+      "535770225",
+      "2246651373",
+      "1345691725",
+      "97970766",
+      "1333766853"
+    ],
+    "orientations": "horizontal",
+    "moods": "bold,dramatic",
+    "minimumSize": "x_large"
+  },
+  "pages/self-discovery/tool-1": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2091471269",
+    "searchQuery": "journal notebook pen writing reflection personal growth",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/2260101168",
+      "https://img1.wsimg.com/isteam/getty/2277227835",
+      "https://img1.wsimg.com/isteam/getty/2267155323",
+      "https://img1.wsimg.com/isteam/getty/2256032846"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:58:17.702Z",
+    "lastUpdated": "2026-07-15T19:58:17.702Z",
+    "gettyId": "2091471269",
+    "alternativeGettyIds": [
+      "2260101168",
+      "2277227835",
+      "2267155323",
+      "2256032846"
+    ],
+    "orientations": "vertical",
+    "moods": "warm,natural"
+  },
+  "pages/self-discovery/tool-2": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2195938346",
+    "searchQuery": "bold confident woman standing powerful energy transformation",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/2257672352",
+      "https://img1.wsimg.com/isteam/getty/1147341608",
+      "https://img1.wsimg.com/isteam/getty/1334430031",
+      "https://img1.wsimg.com/isteam/getty/1460185737"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:58:19.199Z",
+    "lastUpdated": "2026-07-15T19:58:19.199Z",
+    "gettyId": "2195938346",
+    "alternativeGettyIds": [
+      "2257672352",
+      "1147341608",
+      "1334430031",
+      "1460185737"
+    ],
+    "orientations": "vertical",
+    "moods": "bold,dramatic"
+  },
+  "pages/self-discovery/tool-3": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/1207081760",
+    "searchQuery": "compass map direction clarity focus goal setting path forward",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/2254628874",
+      "https://img1.wsimg.com/isteam/getty/2192687851",
+      "https://img1.wsimg.com/isteam/getty/2190633717",
+      "https://img1.wsimg.com/isteam/getty/175198665"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:58:20.964Z",
+    "lastUpdated": "2026-07-15T19:58:20.964Z",
+    "gettyId": "1207081760",
+    "alternativeGettyIds": [
+      "2254628874",
+      "2192687851",
+      "2190633717",
+      "175198665"
+    ],
+    "orientations": "vertical",
+    "moods": "bold,natural"
+  },
+  "pages/self-discovery/action": {
+    "mediaType": "image",
+    "currentUrl": "https://img1.wsimg.com/isteam/getty/2259447583",
+    "searchQuery": "person running sunrise silhouette motion energy breakthrough",
+    "alternatives": [
+      "https://img1.wsimg.com/isteam/getty/820576792",
+      "https://img1.wsimg.com/isteam/getty/1271853465",
+      "https://img1.wsimg.com/isteam/getty/1441275840",
+      "https://img1.wsimg.com/isteam/getty/922758758"
+    ],
+    "userModified": false,
+    "createdAt": "2026-07-15T19:58:26.524Z",
+    "lastUpdated": "2026-07-15T19:58:26.524Z",
+    "gettyId": "2259447583",
+    "alternativeGettyIds": [
+      "820576792",
+      "1271853465",
+      "1441275840",
+      "922758758"
+    ],
+    "orientations": "horizontal",
+    "moods": "bold,vivid"
+  },
+  "pages/home/channel-ai-consulting": {
+    "mediaType": "generated",
+    "currentUrl": "/airo-assets/uploads/a-small-business-owner-s-desk-in-warm-af-Un1vJf.png",
+    "searchQuery": "small business owner workspace afternoon light",
+    "caption": "small business owner workspace afternoon light",
+    "alternatives": [],
+    "aiGeneratedUrls": [
+      "/airo-assets/uploads/a-small-business-owner-s-desk-in-warm-af-Un1vJf.png"
+    ],
+    "userModified": true,
+    "createdAt": "2026-07-21T19:09:07.866Z",
+    "lastUpdated": "2026-07-21T19:09:07.866Z"
+  },
+  "pages/home/channel-classes": {
+    "mediaType": "generated",
+    "currentUrl": "/airo-assets/uploads/a-small-informal-workshop-or-classroom-s-iMsbm7.png",
+    "searchQuery": "people collaborating around table laptops",
+    "caption": "people collaborating around table laptops",
+    "alternatives": [],
+    "aiGeneratedUrls": [
+      "/airo-assets/uploads/a-small-informal-workshop-or-classroom-s-iMsbm7.png"
+    ],
+    "userModified": true,
+    "createdAt": "2026-07-21T19:09:15.480Z",
+    "lastUpdated": "2026-07-21T19:09:15.480Z"
+  },
+  "pages/home/channel-insight": {
+    "mediaType": "generated",
+    "currentUrl": "/airo-assets/uploads/pages-home-channel-insight-d14f8993.png",
+    "searchQuery": "",
+    "caption": "open journal with handwritten notes diagrams",
+    "alternatives": [
+      "/airo-assets/uploads/an-open-journal-on-a-wooden-desk-with-ha-JU8Qob.png"
+    ],
+    "aiGeneratedUrls": [
+      "/airo-assets/uploads/an-open-journal-on-a-wooden-desk-with-ha-JU8Qob.png"
+    ],
+    "userModified": true,
+    "createdAt": "2026-07-21T19:09:17.341Z",
+    "lastUpdated": "2026-07-21T19:16:11.349Z",
+    "uploadSources": {
+      "/airo-assets/uploads/pages-home-channel-insight-d14f8993.png": "khytrw3fsc_1784661356714_file_N63qejh66y.png"
+    },
+    "uploadContentHash": "8d0470e5aedf1ad6ca0dff5c1a6e3bc86687ce68daf205396587af38015cfe9a"
+  },
+  "uploads/background-khytrw3fsc-1785181715008-file-hs7fq9l4aq": {
+    "mediaType": "image",
+    "currentUrl": "/airo-assets/uploads/uploads-background-khytrw3fsc-1785181715008-file-hs7fq9l4aq-aba76b56.png",
+    "searchQuery": "",
+    "alternatives": [],
+    "userModified": true,
+    "createdAt": "2026-07-27T19:48:40.583Z",
+    "lastUpdated": "2026-07-27T19:48:40.583Z",
+    "uploadSources": {
+      "/airo-assets/uploads/uploads-background-khytrw3fsc-1785181715008-file-hs7fq9l4aq-aba76b56.png": "khytrw3fsc_1785181715008_file_hS7fQ9L4AQ.PNG"
+    },
+    "uploadContentHash": "b1f093d560f095810cfe4c62bc561dbb9af2a03afa7e0b7362d31efa08a31de2"
+  }
+}

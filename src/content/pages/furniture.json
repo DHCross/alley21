@@ -1,0 +1,39 @@
+{
+  "values": [
+    {
+      "title": "Selective sourcing",
+      "description": "Pieces are chosen for their construction, character, and potential — not simply because they are available. The focus is quality, usefulness, and what each piece could become.",
+      "id": "ehJz8LDZajb_Ucj9tOJl5"
+    },
+    {
+      "title": "Thoughtful transformation",
+      "description": "Each piece is assessed individually, then repaired, refinished, painted, waxed, or updated as needed. The goal is not to force every piece into the same style, but to give it a clear second life.",
+      "id": "hcyjgbSllZaEu_f-yNdnt"
+    },
+    {
+      "title": "Local and personal",
+      "description": "This is a hands-on local operation. Pieces are sourced, transformed, and sold within the community — not shipped from a warehouse or produced at scale.",
+      "id": "mb1d9D4EZueAGFLVT_zl-"
+    }
+  ],
+  "process": [
+    {
+      "step": "01",
+      "title": "The find",
+      "description": "Sourced from estate sales, auctions, and private collections. We look for quality construction and character.",
+      "id": "yipPEtYURlhFEJQNpXTmy"
+    },
+    {
+      "step": "02",
+      "title": "The work",
+      "description": "Each piece is assessed, repaired, and transformed by hand. Paint, wax, hardware — whatever it takes to bring it back.",
+      "id": "SfcOfcjeXoT_sE1eB8Zwq"
+    },
+    {
+      "step": "03",
+      "title": "The listing",
+      "description": "Finished pieces are listed on Facebook Marketplace. Current inventory is always there — updated as pieces are completed.",
+      "id": "fELte474Pa-55jXhKLQt0"
+    }
+  ]
+}
