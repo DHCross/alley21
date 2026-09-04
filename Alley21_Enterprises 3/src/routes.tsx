@@ -9,11 +9,13 @@ const SelfDiscoveryPage = lazy(() => import('./pages/self-discovery'));
 const ContactPage = lazy(() => import('./pages/contact'));
 const OurStoryPage = lazy(() => import('./pages/about'));
 const StorefrontProofPage = lazy(() => import('./pages/storefront-proof'));
+const VintageDetailPage = lazy(() => import('./pages/vintage-detail'));
 
 export const routes: RouteObject[] = [
   { path: '/', element: <HomePage /> },
   { path: '/ai-tech', element: <AiTechPage /> },
   { path: '/vintage', element: <VintagePage /> },
+  { path: '/vintage/:itemId', element: <VintageDetailPage /> },
   { path: '/self-discovery', element: <SelfDiscoveryPage /> },
   { path: '/our-story', element: <OurStoryPage /> },
   { path: '/contact', element: <ContactPage /> },

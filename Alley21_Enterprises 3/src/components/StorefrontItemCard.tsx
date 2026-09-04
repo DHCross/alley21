@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import type { PublicStorefrontItem } from '@/types/storefront';
 
 type Props = {
@@ -6,7 +7,10 @@ type Props = {
 
 export function StorefrontItemCard({ item }: Props) {
   return (
-    <article className="group rounded-2xl bg-card border border-border overflow-hidden transition hover:border-primary/50">
+    <Link
+      to={`/vintage/${encodeURIComponent(item.id)}`}
+      className="group block rounded-2xl bg-card border border-border overflow-hidden transition hover:border-primary/50"
+    >
       <div className="aspect-[4/3] bg-muted overflow-hidden">
         {item.images[0] ? (
           <img
@@ -33,6 +37,6 @@ export function StorefrontItemCard({ item }: Props) {
           <span className="px-2 py-1 bg-muted rounded">{item.fulfillment}</span>
         </div>
       </div>
-    </article>
+    </Link>
   );
 }
