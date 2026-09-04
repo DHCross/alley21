@@ -156,16 +156,19 @@ describe("llmsTxtHandler", () => {
 	it("serves a well-formed file with the right headers on a customer host", () => {
 		const { res, calls } = mockRes();
 		llmsTxtHandler(reqFor("acme.com"), res);
-		// Default siteMeta is unseeded, so H1 falls back to the hostname and
-		// the default seoRoutes ("/") produces a single Home link.
 		expect(calls.status).toBeUndefined(); // no explicit status => Express 200
 		expect(calls.contentType).toBe("text/plain");
 		expect(calls.headers["Cache-Control"]).toBe(
 			"public, max-age=60, must-revalidate",
 		);
 		expect(calls.headers["Vary"]).toBe("Host");
-		expect(calls.body).toContain("# acme.com");
+		// siteMeta is seeded and seoRoutes mirrors the current route set.
+		expect(calls.body).toContain("# Alley 21 Enterprises");
+		expect(calls.body).toContain(
+			"> A multi-channel venture dealing in vintage goods, antique furniture, art, collectibles, and pre-loved clothing",
+		);
 		expect(calls.body).toContain("## Pages");
 		expect(calls.body).toContain("- [Home](https://acme.com/)");
+		expect(calls.body).toContain("- [Vintage](https://acme.com/vintage)");
 	});
 });

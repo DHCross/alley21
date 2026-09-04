@@ -5,13 +5,6 @@ import { existsSync, statSync } from "node:fs";
 import { readFile } from "node:fs/promises";
 import type { IncomingMessage, ServerResponse } from "node:http";
 import { URL } from "node:url";
-import sourceMapperPlugin from "./source-mapper/src/index";
-import { devToolsPlugin } from "./dev-tools/src/vite-plugin";
-import { fullStoryPlugin } from "./fullstory-plugin";
-import { errorInterceptorPlugin } from "./dev-tools/src/vite-error-interceptor";
-import { mediaVersionsPlugin } from "./dev-tools/src/vite-media-versions-plugin";
-import { formatOverridesPlugin } from "./format-overrides-plugin";
-import { contentPlugin } from "./content-plugin/src/index";
 
 function extractHostname(value: string): string {
 	try {
@@ -168,30 +161,13 @@ if (corsOrigins.length === 0) {
 export default defineConfig(({ mode, isSsrBuild }) => ({
 	envPrefix: ["VITE_", "SITE_"],
 
-	plugins: [
-		react({
-			babel: {
-				plugins: [sourceMapperPlugin],
-			},
-			}),
-			worktreePreviewPlugin(),
-			apiDevPlugin(),
-			formatOverridesPlugin(__dirname),
-			contentPlugin(),
-			...(mode === "development"
-			? [
-					devToolsPlugin() as Plugin,
-					fullStoryPlugin(),
-					errorInterceptorPlugin(),
-					mediaVersionsPlugin() as Plugin,
-				]
-			: []),
-	],
+	plugins: [react(), worktreePreviewPlugin(), apiDevPlugin()],
 
 	resolve: {
 		dedupe: ["react", "react-dom", "react-router-dom"],
 		alias: {
-			nothing: "/src/fallbacks/missingModule.ts",
+			"virtual:content": path.resolve(__dirname, "./src/content/virtual-content.ts"),
+			"virtual:format-overrides": path.resolve(__dirname, "./src/content/virtual-format-overrides.ts"),
 			"@/api": path.resolve(__dirname, "./src/server/api"),
 			"@": path.resolve(__dirname, "./src"),
 		},
