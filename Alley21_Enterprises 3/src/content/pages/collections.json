@@ -1,9 +1,9 @@
 {
   "hero": {
     "eyebrow": "Alley 21 Enterprises",
-    "heading": "Vintage Fashion",
-    "headingAccent": "and Treasures",
-    "subheading": "Alley 21 brings together vintage fashion, distinctive collections, restored and refreshed pieces, and unexpected treasures selected for their character, usefulness, or beauty.",
+    "heading": "Vintage",
+    "headingAccent": "& Furniture",
+    "subheading": "Vintage fashion, restored furniture, and one-of-a-kind pieces selected for character, usefulness, or beauty.",
     "ctaPrimary": "Browse what's available",
     "ctaSecondary": "Inquire about a piece"
   },
@@ -31,7 +31,7 @@
     },
     {
       "label": "Furniture and Home",
-      "description": "Restored, refinished, and reimagined furniture pieces and unique home accents. [Add current inventory placeholder when pieces are available.]",
+      "description": "Restored, refinished, and reimagined furniture pieces and unique home accents.",
       "id": "PhV_FxMQzDXcUpt9MYPkI"
     }
   ],
@@ -57,7 +57,7 @@
   "imagePullQuote": "From overlooked",
   "imagePullQuoteAccent": "to useful again.",
   "ctaHeading": "Looking for something specific?",
-  "ctaBody": "Items may be available through the Alley 21 website and on marketplaces such as eBay. Reach out to ask about current availability.",
-  "ctaPrimary": "Inquire About Available Pieces",
-  "ctaSecondary": "View on eBay"
+  "ctaBody": "Browse current inventory below or reach out to ask about a particular piece.",
+  "ctaPrimary": "Browse the collection",
+  "ctaSecondary": "Contact us"
 }

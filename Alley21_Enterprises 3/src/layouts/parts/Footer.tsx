@@ -1,9 +1,10 @@
 import { Facebook, Instagram } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { VINTAGE_AND_FURNITURE_LABEL } from '@/lib/commerce';
 
 const categoryLinks = [
   { href: '/ai-tech', label: 'AI Consulting' },
-  { href: '/vintage', label: 'Vintage Fashion and Treasures' },
+  { href: '/vintage', label: VINTAGE_AND_FURNITURE_LABEL },
   { href: '/self-discovery', label: 'Tools for Self-Discovery' },
 ];
 
