@@ -27,6 +27,7 @@ const fixtureItem: PublicStorefrontItem = {
   dimensions: { weightOz: 24 },
   availability: 'available',
   fulfillment: 'parcel',
+  storefrontClass: 'furniture',
 };
 
 export function StorefrontProof() {

@@ -4,32 +4,11 @@ import { StorefrontItemCard } from './StorefrontItemCard';
 
 type FilterKey = 'all' | 'mens' | 'womens' | 'furniture';
 
-type FilterOption = {
-  key: FilterKey;
-  label: string;
-  gap: string | null;
-};
-
-const filters: FilterOption[] = [
-  { key: 'all', label: 'All', gap: null },
-  {
-    key: 'mens',
-    label: "Men's",
-    gap:
-      "Men's filtering requires `gender` or `department` data in the public catalog, which is not currently part of `PublicStorefrontItem`.",
-  },
-  {
-    key: 'womens',
-    label: "Women's",
-    gap:
-      "Women's filtering requires `gender` or `department` data in the public catalog, which is not currently part of `PublicStorefrontItem`.",
-  },
-  {
-    key: 'furniture',
-    label: 'Furniture',
-    gap:
-      "Furniture filtering requires a `subcategory` or dedicated furniture classification in the public catalog; `category` is too broad (e.g. 'Home Goods').",
-  },
+const filters: { key: FilterKey; label: string }[] = [
+  { key: 'all', label: 'All' },
+  { key: 'mens', label: "Men's" },
+  { key: 'womens', label: "Women's" },
+  { key: 'furniture', label: 'Furniture' },
 ];
 
 const CATALOG_URL =
@@ -49,6 +28,7 @@ const fallbackItem: PublicStorefrontItem = {
   dimensions: { length: 60, width: 18, height: 30, weightOz: 1600 },
   availability: 'available',
   fulfillment: 'freight',
+  storefrontClass: 'furniture',
 };
 
 export function VintageCatalog() {
@@ -93,7 +73,10 @@ export function VintageCatalog() {
     };
   }, []);
 
-  const active = filters.find((f) => f.key === activeFilter) ?? filters[0];
+  const filteredItems =
+    activeFilter === 'all'
+      ? items
+      : items.filter((item) => item.storefrontClass === activeFilter);
 
   return (
     <div className="space-y-8">
@@ -113,17 +96,6 @@ export function VintageCatalog() {
         ))}
       </div>
 
-      {active.gap && (
-        <div className="rounded-xl border border-dashed border-border bg-card p-6 text-muted-foreground">
-          <p className="text-sm font-medium mb-1">Data-contract gap</p>
-          <p className="text-sm">{active.gap}</p>
-          <p className="text-sm mt-2">
-            Showing all available items until the public catalog is extended and
-            inventory is backfilled.
-          </p>
-        </div>
-      )}
-
       {error && (
         <p className="text-sm text-amber-600" data-testid="catalog-fallback">
           {error}
@@ -132,11 +104,11 @@ export function VintageCatalog() {
 
       {loading ? (
         <p className="text-muted-foreground">Loading collection…</p>
-      ) : items.length === 0 ? (
+      ) : filteredItems.length === 0 ? (
         <p className="text-muted-foreground">No items available.</p>
       ) : (
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-          {items.map((item) => (
+          {filteredItems.map((item) => (
             <StorefrontItemCard key={item.id} item={item} />
           ))}
         </div>

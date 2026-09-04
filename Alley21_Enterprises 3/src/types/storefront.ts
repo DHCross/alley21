@@ -12,6 +12,7 @@
 
 export type PublicStorefrontAvailability = 'available' | 'reserved' | 'sold';
 export type StorefrontFulfillment = 'parcel' | 'local_pickup' | 'freight';
+export type StorefrontClass = 'mens' | 'womens' | 'furniture';
 
 export interface PublicStorefrontDimensions {
   length?: number;
@@ -32,4 +33,6 @@ export interface PublicStorefrontItem {
   dimensions: PublicStorefrontDimensions;
   availability: PublicStorefrontAvailability;
   fulfillment: StorefrontFulfillment;
+  /** Authoritative storefront navigation classification. */
+  storefrontClass: StorefrontClass;
 }
