@@ -1,0 +1,678 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Alley 21 Business Goals — Alley 21 Enterprises LLC</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fcfcfb;
+    --surface:#ffffff;
+    --surface-2:#f1f4f1;
+    --ink:#16211c;
+    --ink-2:#3d4a43;
+    --ink-3:#66736c;
+    --line:#d9dfd9;
+    --line-strong:#b9c4ba;
+    --green:#1d4d3a;
+    --green-soft:#e3ede6;
+    --rust:#9c4a1f;
+    --rust-soft:#f6e8dd;
+    --gold:#7a5c14;
+    --gold-soft:#f3ecd4;
+    --blue:#274b6d;
+    --blue-soft:#e2eaf1;
+    --red:#8c2f2f;
+    --red-soft:#f5e3e1;
+    --radius:10px;
+    --radius-sm:6px;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#101613;
+      --surface:#171f1a;
+      --surface-2:#1e2821;
+      --ink:#e8ede9;
+      --ink-2:#c2cdc4;
+      --ink-3:#93a198;
+      --line:#2c3a31;
+      --line-strong:#435249;
+      --green:#8fc7a8;
+      --green-soft:#21382c;
+      --rust:#e0a173;
+      --rust-soft:#3d2c1f;
+      --gold:#d9be6e;
+      --gold-soft:#38321c;
+      --blue:#9dbfdd;
+      --blue-soft:#243447;
+      --red:#e39a94;
+      --red-soft:#3f2724;
+    }
+  }
+  *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  @media (prefers-reduced-motion: reduce){ html{scroll-behavior:auto} }
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size:16.5px; line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--green); text-underline-offset:3px}
+  @media (prefers-color-scheme: dark){ a{color:var(--green)} }
+  .wrap{max-width:1080px; margin:0 auto; padding:0 20px 72px}
+
+  /* ---------- header ---------- */
+  header.top{padding:44px 0 8px; border-bottom:3px solid var(--ink); margin-bottom:0}
+  .kicker{
+    font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12.5px;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); margin:0 0 14px;
+  }
+  h1{
+    font-family:"IBM Plex Serif", Georgia, serif; font-weight:700;
+    font-size:clamp(32px, 6vw, 52px); line-height:1.05; margin:0 0 14px; letter-spacing:-.01em;
+  }
+  .lede{font-size:19px; line-height:1.5; color:var(--ink-2); max-width:46em; margin:0 0 20px}
+  .lede strong{color:var(--ink)}
+  .factbar{
+    display:grid; grid-template-columns:repeat(4, 1fr); gap:0;
+    border-top:1px solid var(--line); margin-top:22px;
+  }
+  .fact{padding:14px 16px 16px 0; border-right:1px solid var(--line); margin-right:16px}
+  .fact:last-child{border-right:0; margin-right:0}
+  .fact dt{
+    font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--ink-3); margin-bottom:5px;
+  }
+  .fact dd{margin:0; font-size:14.5px; line-height:1.45; font-weight:500}
+  .fact dd span{display:block; font-weight:400; color:var(--ink-2); font-size:13.5px}
+
+  /* ---------- nav ---------- */
+  nav.toc{
+    position:sticky; top:0; z-index:5; background:var(--bg);
+    display:flex; flex-wrap:wrap; gap:6px; padding:12px 0 10px;
+    border-bottom:1px solid var(--line); margin-bottom:8px;
+  }
+  nav.toc a{
+    display:inline-flex; align-items:center; min-height:36px; padding:6px 13px;
+    border:1px solid var(--line-strong); border-radius:999px;
+    font-size:13.5px; font-weight:500; color:var(--ink); text-decoration:none;
+    background:var(--surface);
+  }
+  nav.toc a:hover{border-color:var(--green); color:var(--green)}
+
+  /* ---------- sections ---------- */
+  section{padding:34px 0 6px; border-bottom:1px solid var(--line)}
+  section:last-of-type{border-bottom:0}
+  .sec-head{display:flex; align-items:baseline; gap:14px; margin-bottom:6px}
+  .sec-num{
+    font-family:"IBM Plex Mono", monospace; font-size:13px; color:var(--green);
+    border:1px solid var(--line-strong); border-radius:var(--radius-sm);
+    padding:2px 8px; white-space:nowrap; transform:translateY(-2px);
+  }
+  h2{
+    font-family:"IBM Plex Serif", Georgia, serif; font-size:clamp(24px, 4vw, 31px);
+    font-weight:700; line-height:1.15; margin:0;
+  }
+  h3{
+    font-family:"IBM Plex Serif", Georgia, serif; font-size:20px; font-weight:600;
+    margin:26px 0 8px; line-height:1.25;
+  }
+  h3:first-of-type{margin-top:14px}
+  p{margin:0 0 12px; max-width:52em}
+  p.narrow, li{max-width:52em}
+  ul, ol{margin:0 0 14px; padding-left:22px}
+  li{margin-bottom:6px}
+  li::marker{color:var(--ink-3)}
+  .muted{color:var(--ink-2)}
+  .small{font-size:14px}
+  .mono{font-family:"IBM Plex Mono", monospace; font-size:.92em; overflow-wrap:anywhere}
+  li, td, dd{overflow-wrap:break-word}
+
+  /* ---------- principle band ---------- */
+  .principle{
+    background:var(--green-soft); border-radius:var(--radius);
+    padding:20px 22px; margin:18px 0 6px;
+  }
+  .principle p{margin:0; font-size:17px; line-height:1.55}
+  .principle .lbl{
+    font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.13em;
+    text-transform:uppercase; display:block; margin-bottom:8px; opacity:.75;
+  }
+
+  /* ---------- goal rows ---------- */
+  .goals{display:grid; grid-template-columns:1fr 1fr; gap:14px; margin:16px 0 8px}
+  .goal{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    padding:18px 19px 14px;
+  }
+  .goal.wide{grid-column:1 / -1}
+  .goal h3{font-size:19px; margin:0 0 7px}
+  .goal p{font-size:15px; color:var(--ink-2); margin-bottom:10px}
+  .goal .next{
+    border-top:1px dashed var(--line-strong); padding-top:10px; font-size:14px; margin:0;
+  }
+  .goal .next b{color:var(--ink)}
+
+  /* ---------- badges ---------- */
+  .badge{
+    display:inline-block; font-family:"IBM Plex Mono", monospace; font-size:11px;
+    letter-spacing:.07em; text-transform:uppercase; font-weight:500;
+    padding:3px 9px; border-radius:999px; vertical-align:2px; white-space:nowrap;
+  }
+  .b-active{background:var(--green-soft); color:var(--green)}
+  .b-draft{background:var(--gold-soft); color:var(--gold)}
+  .b-no{background:var(--red-soft); color:var(--red)}
+  .b-info{background:var(--blue-soft); color:var(--blue)}
+  .b-wait{background:var(--rust-soft); color:var(--rust)}
+  .b-plain{background:var(--surface-2); color:var(--ink-2)}
+  @media (prefers-color-scheme: dark){
+    .b-active{color:#a9dcc0}.b-draft{color:#e6cf85}.b-no{color:#f0b3ac}
+    .b-info{color:#b3cfee}.b-wait{color:#efb98d}
+  }
+  .badges{display:flex; flex-wrap:wrap; gap:6px; margin:0 0 10px}
+
+  /* ---------- tables ---------- */
+  .tblwrap{overflow:visible; margin:14px 0 18px}
+  table{width:100%; border-collapse:collapse; font-size:15px}
+  caption{text-align:left; font-size:13.5px; color:var(--ink-3); padding-bottom:8px}
+  th{
+    text-align:left; font-family:"IBM Plex Mono", monospace; font-size:11.5px;
+    letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3); font-weight:500;
+    padding:8px 12px 8px 0; border-bottom:2px solid var(--ink);
+  }
+  td{padding:11px 12px 11px 0; border-bottom:1px solid var(--line); vertical-align:top}
+  td:first-child{font-weight:600}
+  tr td:last-child, tr th:last-child{padding-right:0}
+
+  /* ---------- record cards ---------- */
+  .record{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    padding:20px 22px 12px; margin:16px 0;
+  }
+  .record h3{margin-top:0}
+  .record .meta{
+    font-family:"IBM Plex Mono", monospace; font-size:12.5px; color:var(--ink-3);
+    margin-bottom:10px;
+  }
+  dl.kv{display:grid; grid-template-columns:150px 1fr; gap:4px 18px; margin:10px 0 14px; font-size:15px}
+  dl.kv dt{color:var(--ink-3); font-weight:500}
+  dl.kv dd{margin:0}
+
+  /* ---------- checklist (styled, non-interactive) ---------- */
+  ul.checks{list-style:none; padding:0; margin:12px 0 16px}
+  ul.checks li{
+    position:relative; padding:9px 0 9px 34px; border-bottom:1px solid var(--line);
+    margin:0; font-size:15.5px;
+  }
+  ul.checks li:last-child{border-bottom:0}
+  ul.checks li::before{
+    content:""; position:absolute; left:2px; top:13px; width:15px; height:15px;
+    border:2px solid var(--line-strong); border-radius:4px; background:var(--surface);
+  }
+  ul.checks li.done{color:var(--ink-3)}
+  ul.checks li.done::before{background:var(--green); border-color:var(--green)}
+  ul.checks li.done::after{
+    content:""; position:absolute; left:7px; top:15px; width:5px; height:9px;
+    border:solid #fff; border-width:0 2px 2px 0; transform:rotate(42deg);
+  }
+  @media (prefers-color-scheme: dark){ ul.checks li.done::after{border-color:#101613} }
+  ul.checks li .why{display:block; font-size:14px; color:var(--ink-2); margin-top:2px}
+
+  /* ---------- callout ---------- */
+  .callout{
+    border:1px solid var(--line-strong); border-left:5px solid var(--rust);
+    border-radius:var(--radius-sm); padding:16px 19px 8px; margin:16px 0;
+    background:var(--surface);
+  }
+  .callout.green{border-left-color:var(--green)}
+  .callout p{font-size:15.5px}
+  .callout .lbl{
+    font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.13em;
+    text-transform:uppercase; color:var(--rust); display:block; margin-bottom:7px;
+  }
+  .callout.green .lbl{color:var(--green)}
+
+  footer{padding:30px 0 0; font-size:13.5px; color:var(--ink-3)}
+  footer p{max-width:60em}
+
+  /* ---------- responsive ---------- */
+  @media (max-width:760px){
+    .factbar{grid-template-columns:1fr 1fr}
+    .fact{border-right:0; margin-right:0; padding-right:12px}
+    .goals{grid-template-columns:1fr}
+    dl.kv{grid-template-columns:1fr; gap:0}
+    dl.kv dt{margin-top:8px}
+    /* tables become stacked rows */
+    table, thead, tbody, tr, td{display:block}
+    thead{display:none}
+    tr{border-bottom:1px solid var(--line); padding:10px 0}
+    td{border-bottom:0; padding:3px 0}
+    td::before{
+      content:attr(data-l); display:block; font-family:"IBM Plex Mono", monospace;
+      font-size:10.5px; letter-spacing:.1em; text-transform:uppercase; color:var(--ink-3);
+      margin-bottom:1px;
+    }
+    td:first-child{font-size:16.5px}
+    td:first-child::before{display:none}
+  }
+  @media print{
+    nav.toc{display:none}
+    body{font-size:12.5pt}
+    .wrap{max-width:none}
+    section{break-inside:avoid-page}
+    .record, .goal{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="top">
+  <p class="kicker">Alley 21 Enterprises LLC · Panama City, Florida · Consolidated review — November 12, 2026</p>
+  <h1>Alley 21 Business Goals</h1>
+  <p class="lede">A multidisciplinary business combining <strong>applied artificial intelligence, environmental science, software development, education, research, and commercial products</strong>. Its distinguishing idea is not simply to build AI applications — it is to build systems that help people perform complex work while keeping the underlying evidence, calculations, uncertainty, and human decision-making clearly separated.</p>
+  <dl class="factbar">
+    <div class="fact"><dt>Entity</dt><dd>Alley 21 Enterprises LLC<span>Florida LLC · Doc. #L26000185075 · Active · Filed March 31, 2026 (Sunbiz, verified Oct 25, 2026)</span></dd></div>
+    <div class="fact"><dt>Owner</dt><dd>Stephanie Breeden<span>Registered agent &amp; authorized member · Environmental / regulatory lead</span></dd></div>
+    <div class="fact"><dt>Technical director</dt><dd>Dan Cross<span>Software, AI workflows &amp; systems development · Authorized person — not a member</span></dd></div>
+    <div class="fact"><dt>Clearest statement</dt><dd>FSU Panama City packet<span>Collaboration packet prepared September 17, 2026</span></dd></div>
+  </dl>
+</header>
+
+<nav class="toc" aria-label="Contents">
+  <a href="#goals">Principal goals</a>
+  <a href="#portfolio">Portfolio</a>
+  <a href="#fsu">FSU collaboration</a>
+  <a href="#research">Research &amp; submissions</a>
+  <a href="#publishing">Publishing pipeline</a>
+  <a href="#advertising">Advertising</a>
+  <a href="#grants">Grants &amp; funding</a>
+  <a href="#structure">Structure &amp; money</a>
+  <a href="#next">Next steps</a>
+  <a href="#decisions">Decisions log</a>
+</nav>
+
+<!-- ================= 1. PRINCIPAL GOALS ================= -->
+<section id="goals">
+  <div class="sec-head"><span class="sec-num">01</span><h2>The company’s principal goals</h2></div>
+  <p>Alley 21 is pursuing several related but distinct objectives. Some are operational businesses, some are working software products, and others are research proposals or potential academic partnerships. They should not all be described as completed accomplishments.</p>
+
+  <div class="principle">
+    <span class="lbl">Common operating principle</span>
+    <p>Start with a worthwhile problem, preserve authoritative information, make uncertainty visible, define when human review is required, and test small implementations before scaling.</p>
+  </div>
+
+  <div class="goals">
+    <article class="goal">
+      <div class="badges"><span class="badge b-active">Core line</span></div>
+      <h3>Applied AI &amp; technology services</h3>
+      <p>Develop useful AI-assisted workflows, software, automation, document-processing systems, and decision-support tools for individuals, businesses, and professional clients.</p>
+      <p class="next"><b>Positioning note:</b> the bespoke AI / NEPA pitch taken to colleges and developers has been hard to close as outsiders (Oct 29). The local version of the same skills — for Panama City small businesses and homeowners — is the nearer-term offer. See <a href="#advertising">Advertising</a>.</p>
+    </article>
+
+    <article class="goal">
+      <div class="badges"><span class="badge b-active">Core line</span></div>
+      <h3>Environmental science &amp; regulatory work</h3>
+      <p>Apply Stephanie’s NEPA/CEQA, permitting, environmental-assessment, and compliance background to professional services and carefully bounded AI-assisted environmental review.</p>
+      <p class="next"><b>Local offer:</b> permitting / wetland checks before renovating, building, or buying — a service Cove homeowners, realtors, and builders can recognize immediately.</p>
+    </article>
+
+    <article class="goal">
+      <div class="badges"><span class="badge b-info">Developing</span></div>
+      <h3>AI education &amp; workforce development</h3>
+      <p>Create practical, tool-neutral AI workshops and training for small businesses, working professionals, students, and community organizations.</p>
+      <p class="next"><b>First vehicle:</b> the FSU Panama City proposal — one defined workshop or practical pilot, evaluated before expanding.</p>
+    </article>
+
+    <article class="goal">
+      <div class="badges"><span class="badge b-info">Developing</span></div>
+      <h3>Research &amp; academic collaboration</h3>
+      <p>Develop research protocols, pursue external review, explore grants and sponsored projects, and establish relationships with academic institutions — without pretending that working software constitutes scientific validation.</p>
+      <p class="next"><b>Nearest milestone:</b> turn the epistemic-custody work into one defensible, independently submitted paper. See <a href="#publishing">Publishing pipeline</a>.</p>
+    </article>
+
+    <article class="goal wide">
+      <div class="badges"><span class="badge b-info">Developing</span></div>
+      <h3>Commercial products &amp; resale operations</h3>
+      <p>Develop revenue through Raven Calder, software products, AI-enabled resale workflows, client services, and related creative or publishing projects. Raven is the most extensively documented product in the portfolio; it is tracked in its own dedicated space and appears here only as part of the Alley 21 portfolio — this page does not duplicate its roadmap.</p>
+      <p class="next"><b>Closest to revenue:</b> Thrift Companion, which supports Alley 21’s resale operations directly — identification, sold-comparable research, profitability analysis, and buy/pass decisions.</p>
+    </article>
+  </div>
+</section>
+
+<!-- ================= 2. PORTFOLIO ================= -->
+<section id="portfolio">
+  <div class="sec-head"><span class="sec-num">02</span><h2>Software &amp; commercial project portfolio</h2></div>
+  <p>The September 2026 portfolio identifies the following projects. These are documented development efforts; their individual release and revenue statuses have not all been independently rechecked, and they are listed as documented — not as finished products.</p>
+
+  <div class="tblwrap">
+  <table>
+    <caption>Portfolio as documented in the September 2026 packet</caption>
+    <thead><tr><th>Project</th><th>Purpose</th><th>Note</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>Raven Calder / The Woven Map</td>
+        <td data-l="Purpose">Symbolic interpretation platform with deterministic calculations, AI explanations, research protocols, accounts, and subscriptions</td>
+        <td data-l="Note">Most extensively documented project. Tracked in its own dedicated space; listed here for the portfolio relationship only.</td>
+      </tr>
+      <tr>
+        <td>Thrift Companion</td>
+        <td data-l="Purpose">AI-supported resale identification, sold-comparable research, profitability analysis, and buy/pass decisions</td>
+        <td data-l="Note">Closely associated with Alley 21’s resale operations. Earlier planning sought to keep its ownership and business-use rights separate from payment for ordinary technical services.</td>
+      </tr>
+      <tr>
+        <td>LiquidWallet</td>
+        <td data-l="Purpose">Household cash-flow planning, recurring bills, pay cycles, budgets, and savings goals</td>
+        <td data-l="Note">Documented development effort.</td>
+      </tr>
+      <tr>
+        <td>Book MD Workbench</td>
+        <td data-l="Purpose">OCR cleanup, manuscript reconstruction, editorial quality control, and publication preparation</td>
+        <td data-l="Note">Documented development effort.</td>
+      </tr>
+      <tr>
+        <td>Mapper / Blueprint Translator</td>
+        <td data-l="Purpose">Convert maps, sketches, and text descriptions into structured design projects</td>
+        <td data-l="Note">Documented development effort.</td>
+      </tr>
+      <tr>
+        <td>Natural Typer</td>
+        <td data-l="Purpose">Controlled desktop text-entry automation</td>
+        <td data-l="Note">Documented development effort.</td>
+      </tr>
+      <tr>
+        <td>Sherlog</td>
+        <td data-l="Purpose">Diagnose context drift, unsupported assumptions, missing tests, and implementation gaps in AI-assisted coding</td>
+        <td data-l="Note">Documented development effort.</td>
+      </tr>
+      <tr>
+        <td>Cross Repo Ops</td>
+        <td data-l="Purpose">Constrain AI repository operations using access rules, approved actions, and Git safeguards</td>
+        <td data-l="Note">Documented development effort.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p class="small muted">The other applications demonstrate broader technical capabilities and possible commercial opportunities; none is presented here as a launched, revenue-earning product.</p>
+</section>
+
+<!-- ================= 3. FSU ================= -->
+<section id="fsu">
+  <div class="sec-head"><span class="sec-num">03</span><h2>Academic &amp; institutional collaboration</h2></div>
+
+  <div class="record">
+    <div class="badges"><span class="badge b-info">Exploratory proposal</span><span class="badge b-plain">Not a signed partnership</span><span class="badge b-plain">Not an awarded grant</span></div>
+    <h3>Florida State University Panama City — collaboration prospectus</h3>
+    <p class="meta">Prepared September 17, 2026 · Addressed to Associate Dean Irvin Clark</p>
+    <p>The packet names <strong>Stephanie Breeden</strong> as owner and environmental/regulatory lead, and <strong>Dan Cross</strong> as technical director responsible for software, AI workflows, and systems development. It identifies four possible pathways:</p>
+    <ul>
+      <li>AI education and professional training.</li>
+      <li>Student projects involving real-world problems.</li>
+      <li>Environmental and regional research applications, potentially including the St. Andrew and St. Joseph Bays Estuary Program.</li>
+      <li>Longer-term applied AI research, institutional grants, and sponsored research.</li>
+    </ul>
+    <p>It also references FSU Panama City’s <strong>ASCENT</strong> and <strong>InSPIRE</strong> initiatives as potential points of alignment.</p>
+    <p class="next" style="border-top:1px dashed var(--line-strong); padding-top:10px"><b>Documented objective — deliberately modest:</b> identify one or two appropriate collaboration opportunities, connect with faculty or program leads, undertake a small project, and evaluate it before expanding.</p>
+  </div>
+</section>
+
+<!-- ================= 4. RESEARCH & SUBMISSIONS ================= -->
+<section id="research">
+  <div class="sec-head"><span class="sec-num">04</span><h2>Previous submissions &amp; research record</h2></div>
+  <p>The submission history matters because the next step need not begin from scratch. The Myers &amp; Briggs proposal establishes one methodological direction; the more recent epistemic-custody work offers a potentially broader AI-research contribution. Outcomes below are stated as they happened — including the unfavorable ones.</p>
+
+  <div class="record">
+    <div class="badges"><span class="badge b-no">Not approved — April 20, 2026</span></div>
+    <h3>Myers &amp; Briggs Foundation research proposal</h3>
+    <p><em>Evaluating a Deterministic Cognitive Inference Framework for MBTI Type Classification</em></p>
+    <dl class="kv">
+      <dt>Principal investigator</dt><dd>Dan Cross</dd>
+      <dt>Co-principal investigator</dt><dd>Stephanie Breeden</dd>
+      <dt>Proposal</dt><dd>Evaluate whether a deterministic cognitive inference framework can classify personality dimensions consistently and reproducibly, including comparisons with conventional self-report assessment — testing stability, axis-level consistency, controlled inputs, and transparent scoring.</dd>
+      <dt>Outcome</dt><dd><strong>Not approved on April 20, 2026.</strong> Decision by Kesstan Blandin, on eligibility: the program funds academic researchers and was not funding independent researchers at that time. It is a grant application that was declined on eligibility grounds — not an accepted article, a completed validated study, or a rejection on the merits of the method.</dd>
+    </dl>
+    <p class="small muted">Open option: evaluate the proposal for revision, resubmission where eligibility allows, or conversion into a methodological manuscript.</p>
+  </div>
+
+  <div class="record">
+    <div class="badges"><span class="badge b-wait">Waitlisted — programme closed full</span></div>
+    <h3>IAJS 2026 interdisciplinary conference (London)</h3>
+    <p><em>Engineering AI to Interpret Astrology’s Mathematical Structure Without Confirmation Bias</em></p>
+    <dl class="kv">
+      <dt>Venue</dt><dd>2026 London conference involving analytical psychology and Jungian studies (IAAP/IAJS).</dd>
+      <dt>Course</dt><dd>Submitted after the formal deadline and referred to the conference committee (discussion April 21) → <strong>waitlisted May 8 — one of only three</strong> → closed July 28 when the programme remained full.</dd>
+      <dt>Reading</dt><dd>Not included because the programme stayed full. The record does not establish a rejection on scholarly or methodological grounds — and because it was never formally published through the conference, it is no prior-publication barrier to a journal submission, subject to each journal’s own policy.</dd>
+    </dl>
+  </div>
+
+  <div class="record">
+    <div class="badges"><span class="badge b-draft">Working research</span></div>
+    <h3>The Woven Map research corpus</h3>
+    <p>A substantial body of research specifications and conceptual work on symbolic empiricism, falsifiability, retrospective fitting, evidence provenance, and AI-generated interpretations, including:</p>
+    <ul>
+      <li>Master Canonical Reference</li>
+      <li>Master Operating Contract v6.2</li>
+      <li>Discrimination Gate</li>
+      <li>Behavioral Symbolic Reconstruction</li>
+      <li>Double-Lens Synthesis</li>
+    </ul>
+    <p>These constitute a <strong>developing research program</strong>, not a collection of confirmed peer-reviewed publications. The newer Discrimination Gate is particularly relevant to publication: it proposes comparing a context-only AI response with responses using authentic and alternative symbolic data — an experimental design that could examine whether added symbolic material contributes genuinely distinctive information or merely changes the persuasiveness of the prose. The protocol describes how such evidence <em>could</em> be obtained; it does not yet establish the result.</p>
+  </div>
+
+  <h3>Existing publishing experience</h3>
+  <p>The corporate packet identifies Dan Cross’s earlier published creative and professional work:</p>
+  <ul>
+    <li><em>Eldritch RPG</em> — co-author <span class="muted">(authorship is historical: Daniel sold the game and the Plyphyny system to Hoskbrew, and his work there ended March 16, 2026)</span></li>
+    <li><em>Gary Gygax’s World Builder</em> — co-author</li>
+    <li><em>Gary Gygax’s Insidiae</em> — author</li>
+    <li>Additional tabletop roleplaying books, settings, and related publications</li>
+  </ul>
+  <p>These establish an existing professional publication record — though not an established record of peer-reviewed academic articles. That distinction is kept explicit everywhere on this page.</p>
+</section>
+
+<!-- ================= 5. PUBLISHING PIPELINE ================= -->
+<section id="publishing">
+  <div class="sec-head"><span class="sec-num">05</span><h2>Paper &amp; publishing</h2></div>
+
+  <div class="record">
+    <div class="badges"><span class="badge b-active">The actual manuscript</span><span class="badge b-info">Journal selection in progress</span></div>
+    <h3>“Keeping Generative AI Within Its Limits”</h3>
+    <p class="meta">Manuscript at Rev7 · October 27, 2026 · Gaile’s suggestion: submit to journals</p>
+    <p>This is the one confirmed manuscript on record, and it is the live Paper &amp; publishing goal: find the fitting journals, learn each one’s requirements, reformat the paper to publishable format for the chosen venue, and sort the conference-vs-journal question (addressed above — no prior-publication barrier on the record). The requirements drive the format, so journal selection comes first.</p>
+    <p><b>Prep required almost everywhere, whichever venue is picked:</b> an AI-use disclosure (some venues want it in the cover letter too, and undisclosed use can draw a desk rejection), and anonymizing case material about Daniel’s own named, traceable projects — third-person self-reference, separate title page.</p>
+  </div>
+
+  <h3>Journal shortlist — checked against publishers’ own guidelines, November 12, 2026</h3>
+  <div class="tblwrap">
+  <table>
+    <caption>Top five for this paper, in order. Anything a guidelines page did not state is marked unverified, not filled in.</caption>
+    <thead><tr><th>Journal</th><th>Why it fits</th><th>Key requirements &amp; cost</th></tr></thead>
+    <tbody>
+      <tr>
+        <td>1 · Philosophy &amp; Technology</td>
+        <td data-l="Why it fits">Broadest remit; welcomes any disciplinary background.</td>
+        <td data-l="Requirements">Double-blind · $0 on the subscription route · Anonymize the Raven/Terminus case material; Springer declarations + LLM-use documentation · Word limit <b>not stated</b> on its official pages — unverified.</td>
+      </tr>
+      <tr>
+        <td>2 · Minds and Machines</td>
+        <td data-l="Why it fits">Its stated intersection — epistemology + ethics + computer science — is essentially this paper’s crossing.</td>
+        <td data-l="Requirements">Same Springer package as above · Would want up to six suggested reviewers.</td>
+      </tr>
+      <tr>
+        <td>3 · AI and Ethics</td>
+        <td data-l="Why it fits">Its aims name the paper’s phenomena almost verbatim.</td>
+        <td data-l="Requirements"><b>Hard barrier:</b> requires an institutional/professional email — personal email generally not accepted — with a credential-evidence workaround (ORCID, publication record) at the editor’s discretion · Needs a dedicated normative ethics argument added · References converted to numbered style.</td>
+      </tr>
+      <tr>
+        <td>4 · Ethics and Information Technology</td>
+        <td data-l="Why it fits">Clearest limits in the set.</td>
+        <td data-l="Requirements">5,000–8,000 words · Note: the 3,500-word brief version is <em>below</em> its minimum and cannot go there as-is.</td>
+      </tr>
+      <tr>
+        <td>5 · Science, Technology, &amp; Human Values</td>
+        <td data-l="Why it fits">The STS home for this work.</td>
+        <td data-l="Requirements">No fees at any stage · Engage the STS literature in the framing · Chicago author–date style · ≤ 8,000 words.</td>
+      </tr>
+    </tbody>
+  </table>
+  </div>
+  <p><b>Dropped, with reasons:</b> <em>Big Data &amp; Society</em> (partial fit + a mandatory $2,400 charge) and <em>Episteme</em> (its instructions bar purely case-study work; fully open access at £2,610 / $3,655). <em>Hypatia</em> makes the list only if the paper receives a genuine feminist-epistemology reframing — as currently framed it is outside its scope.</p>
+
+  <h3>A second list, checked — affiliation-focused venues</h3>
+  <p>A separate sweep (via ChatGPT, adjudicated against the publishers’ own policies on November 12) asked a narrower question: which journals accommodate independent researchers? Its central distinction holds — a journal asking for an affiliation is not necessarily requiring university employment.</p>
+  <ul>
+    <li><b>AI for Society (MDPI)</b> — explicitly accepts concept papers; scope covers AI philosophy, human subjectivity, knowledge production, and AI ethics — a genuine fit. MDPI’s “Independent Researcher” affiliation wording is verified across MDPI journal instructions, but was verified on the <em>AI</em> journal’s page, not separately on <em>AI for Society</em>’s — its editorial office can confirm at <span class="mono">aisoc@mdpi.com</span>. <b>The cost the sweep omitted:</b> fully open access with an APC of <b>1,000 CHF</b> charged on acceptance — the main practical fact about this venue for an unfunded independent author.</li>
+    <li><b>Technophany</b> — author biography required, supplied separately from the anonymized manuscript; no institutional-affiliation prerequisite stated. Guidelines also give: 5,000–8,000 words including notes and bibliography, ~150-word abstract, Chicago notes-and-bibliography style. Contact: <span class="mono">journal@philosophyandtechnology.network</span>.</li>
+    <li><b>Constructivist Foundations</b> — requires affiliation in manuscript metadata; whether “Independent Researcher” satisfies it needs confirmation (<span class="mono">submission@constructivist.info</span>). A reported ban on generative AI writing any part of a manuscript is <b>unverified</b> — the journal’s own instruction pages did not surface; the editorial office’s reply would settle it, and it matters given how the corpus was developed.</li>
+    <li><b>Journal of Constructivist Psychology</b> — invites scholars and practitioners across disciplines; no affiliation prerequisite found. <b>The Humanistic Psychologist</b>, <b>Journal of Humanistic Psychology</b>, and <b>Semiotica</b> state title-page affiliation requirements with no explicit independent-author exception located — on their face these are metadata requirements, not eligibility bars.</li>
+  </ul>
+  <div class="callout green">
+    <span class="lbl">The simplest answer to the affiliation field</span>
+    <p>Daniel can honestly list <b>Alley 21 Enterprises LLC, Panama City, FL</b> — a real company he is technical partner in. Most “affiliation required” fields are satisfied by that, no editor inquiry needed. “Independent Researcher” is the fallback, not the only door.</p>
+    <p class="small muted">Three inquiry emails (AI for Society — with the APC/waiver question added — Technophany, and Constructivist Foundations) were drafted on November 12, 2026. <b>Nothing has been sent.</b> One open filing question: the affiliation sweep’s psychology/semiotics cluster fits the Jungian / Woven Map work better than it fits “Keeping Generative AI Within Its Limits” — which manuscript that list was scoped for is still to be confirmed before the two lists are merged.</p>
+  </div>
+
+  <h3>Further publication ideas — inferred, not manuscripts</h3>
+  <p>The November 12 consolidated review organized the corpus into four possible papers. They are <strong>publication opportunities inferred from existing research — not four manuscripts confirmed as written or submitted</strong> — and are recorded here at that status.</p>
+  <div class="tblwrap">
+  <table>
+    <thead><tr><th>Proposed paper</th><th>Main research question</th><th>Readiness</th></tr></thead>
+    <tbody>
+      <tr><td>Epistemic Custody in Generative AI</td><td data-l="Question">How can AI preserve the distinction between evidence, inference, and persuasive explanation?</td><td data-l="Readiness">Strong conceptual foundation; needs literature review and manuscript</td></tr>
+      <tr><td>Symbolic Empiricism and Falsifiability</td><td data-l="Question">Can interpretive symbolic systems be structured to record genuine failures and reject retrospective rescue?</td><td data-l="Readiness">Developed philosophical framework; needs formal academic argument</td></tr>
+      <tr><td>Deterministic Cognitive Inference</td><td data-l="Question">Can a constrained inference framework demonstrate reproducibility and useful performance against conventional personality assessments?</td><td data-l="Readiness">Previously submitted research proposal (see §04); empirical evaluation remains necessary</td></tr>
+      <tr><td>AI-Assisted Meaning-Making and Human Agency</td><td data-l="Question">Can AI support subjective interpretation without claiming unsupported psychological authority?</td><td data-l="Readiness">Substantial source material; requires sharper study design</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<!-- ================= 6. ADVERTISING ================= -->
+<section id="advertising">
+  <div class="sec-head"><span class="sec-num">06</span><h2>Advertising &amp; local outreach</h2></div>
+
+  <div class="record">
+    <div class="badges"><span class="badge b-active">Ad draft approved</span><span class="badge b-draft">One placeholder left</span></div>
+    <h3>The Cove Chronicle — neighborhood magazine ad</h3>
+    <p class="meta">Seller: Michael Christie · Post in The Cove PC group, November 12, 2026 · The Cove, Panama City</p>
+    <dl class="kv">
+      <dt>Price</dt><dd>$275 per ad, per edition — about 11¢ per household</dd>
+      <dt>Cadence</dt><dd>Published every other month — 6 editions a year</dd>
+      <dt>Reach</dt><dd>~2,500 households, all of The Cove</dd>
+      <dt>Split cost</dt><dd>$137.50 each per edition if split with Stephanie · $1,650/year if run in every edition — test one, don’t sign up for a run</dd>
+      <dt>Status</dt><dd>Alley 21’s Cove Chronicle ad draft is approved; the <strong>phone number is the only placeholder left</strong>.</dd>
+    </dl>
+    <p><b>The open pricing question:</b> a July post from the same seller listed $250 half-page / $500 full-page, so the $275 figure does not say what size it buys. That is question #1 for him.</p>
+    <p><b>The offer, repackaged for households:</b> 2,500 Cove households won’t buy the pitch taken to colleges and developers. One ad, two panels, one brand — (1) for the small businesses many Cove residents own: <em>“Practical AI for Panama City businesses — training, workflow automation, and simple custom tools, without hiring IT staff”</em>; (2) for homeowners, realtors, and builders in an old waterfront neighborhood: Stephanie’s environmental side — permitting / wetland checks before renovating, building, or buying. One trackable offer over both: a free 30-minute consult, with a QR code / unique URL so the $275 can be judged. One modest job at $500+ pays for two editions. Raven stays out of this ad.</p>
+    <p><b>The free angle:</b> the seller is explicitly looking for families/businesses to feature next year. Stephanie as a Cove business owner is a legitimate pitch for an editorial feature — that costs nothing and is separate from buying the ad.</p>
+    <h3 style="margin-top:18px">Questions ready for Michael / for Stephanie</h3>
+    <ul class="checks">
+      <li>What size, dimensions, and color is the $275 spot? Deadline and date for the next edition?</li>
+      <li>Discount for 3 or 6 editions — and can we stop after one?</li>
+      <li>QR codes / links allowed? Any readership numbers beyond the 2,500 households?</li>
+      <li>Will he consider a featured-business profile for Stephanie / Alley 21, paid or not?</li>
+      <li>Before any joint money changes hands: one paragraph in writing — whose account leads go to, how resulting revenue is split, and who owns follow-up if the partnership changes.</li>
+    </ul>
+    <p class="small muted">Working recommendation going into the talk with Stephanie: yes to one test edition, split, with a trackable local-services offer — no to a year-long run — and try the feature pitch in parallel.</p>
+  </div>
+</section>
+
+<!-- ================= 7. GRANTS ================= -->
+<section id="grants">
+  <div class="sec-head"><span class="sec-num">07</span><h2>Grants &amp; funding</h2></div>
+  <p>Kept deliberately thinner than the collaboration packet implies. From the November 4, 2026 funding archive, the honest status of every named opportunity is:</p>
+  <div class="tblwrap">
+  <table>
+    <thead><tr><th>Opportunity</th><th>Status on record</th></tr></thead>
+    <tbody>
+      <tr><td>Amber Grant</td><td data-l="Status"><span class="badge b-draft">Draft only</span> &nbsp;Exists as a draft; no submission confirmation anywhere.</td></tr>
+      <tr><td>Women Founders</td><td data-l="Status"><span class="badge b-draft">Draft only</span> &nbsp;Exists as a draft; no submission confirmation anywhere.</td></tr>
+      <tr><td>Galaxy</td><td data-l="Status"><span class="badge b-plain">Lead only</span> &nbsp;A lead — never an application.</td></tr>
+      <tr><td>NSF / Verizon / NASE</td><td data-l="Status"><span class="badge b-plain">Research memo only</span> &nbsp;Appear in a research memo; nothing further.</td></tr>
+    </tbody>
+  </table>
+  </div>
+  <p>The FSU pathway (§03) remains the more concrete funding-adjacent route: institutional grants and sponsored research sit inside that proposal as a longer-term possibility, not as anything applied for.</p>
+</section>
+
+<!-- ================= 8. STRUCTURE ================= -->
+<section id="structure">
+  <div class="sec-head"><span class="sec-num">08</span><h2>Business structure &amp; money</h2></div>
+
+  <h3>Alley 21 Enterprises LLC vs. Extra Mile Tech</h3>
+  <p>Earlier business planning established <strong>Extra Mile Tech</strong> as the technical-services operation working with Alley 21 — Daniel’s brand (<span class="mono">dhcross.com</span>), framed as holder of the code, prompts, and repository, licensing work to Alley 21. The October records clarify an important legal distinction:</p>
+  <ul>
+    <li><strong>Alley 21 Enterprises LLC is the Florida entity</strong> — Doc. #L26000185075, active, filed March 31, 2026. Stephanie Breeden is registered agent and authorized member; <strong>Daniel is an authorized person, not a member.</strong></li>
+    <li><strong>Extra Mile Tech has no Sunbiz record</strong> — it is a trade name / service identity, not a registered entity. That means Daniel personally is the counterparty to any licensing or revenue agreement unless he forms an entity first.</li>
+    <li>The business plans distinguish technical consulting, operational support, ownership of developed software, licensing, and commercial exploitation — and specifically sought to keep Thrift Companion ownership and its business-use rights separate from payment for ordinary technical services.</li>
+  </ul>
+  <p>This matters to research publication as well: software ownership, research authorship, academic affiliations, and commercial licensing are different rights and should not be treated as interchangeable.</p>
+
+  <div class="callout">
+    <span class="lbl">Before money moves</span>
+    <p>Two standing preconditions, both still open:</p>
+    <ul>
+      <li>Before any Stripe payout change to Alley 21 or publishing Terms: verify the Stripe account’s registered name / tax ID and execute a short written IP license / revenue agreement.</li>
+      <li>Before any joint spend (including the Cove Chronicle ad): agree in writing, in one paragraph, whose account leads go to, how resulting revenue is split, and who owns follow-up if Daniel and Stephanie stop working together.</li>
+    </ul>
+    <p>Context that makes this practical rather than personal: Daniel owes Stephanie about <b>$4,000</b> (record, October 28, 2026), and she pays for ChatGPT Pro — asking for more money, or splitting new costs informally, is difficult on both sides. Written agreements are what keep that from becoming friction. Standing instruction (October 26, 2026): leave ravencalder.com’s footer and payment setup unchanged while the business transfer is deferred.</p>
+  </div>
+
+  <h3>Raven Calder — relationship note</h3>
+  <p>Raven is documented as a working application at ravencalder.com with a Next.js/TypeScript architecture, persistent user data, authentication, and subscription infrastructure. Its development goals include improving the reliability of calculated charts, supporting unknown or approximate birth times without false precision, generating accessible interpretations, preserving disagreement, and distinguishing symbolic proposals from demonstrated facts; the broader product direction includes the Beginner Mirror, Full Blueprint, relational analysis, Symbolic Weather, and the Balance Meter. The FSU packet also documents a proposed modest Kickstarter campaign focused on user testing, refinement, continued research, and public launch — whether that campaign has since launched has not been independently verified.</p>
+  <p class="muted">Per Daniel’s scoping, Raven is <strong>not</strong> a lane of this page: it has its own dedicated space, and its launch status, roadmap, and decisions live there. It appears here only where the Alley 21 record itself names it — the portfolio (§02) and the business structure above.</p>
+
+  <h3>Assessment of the direction</h3>
+  <p>Alley 21 currently contains three potentially sustainable lines of business: <strong>professional environmental/regulatory services, applied AI products and consulting, and education/research collaboration.</strong> There is a coherent connection between them — the same constraints developed for Raven (authoritative inputs, source traceability, calibrated uncertainty, restricted automation, human oversight) apply to regulatory document analysis, business decision tools, and responsible AI education.</p>
+  <p>However, the research program benefits from a clearer distinction between commercial product demonstrations, methodological proposals, completed experiments, and externally reviewed publications — which is how this page labels things throughout. The strategic opportunity is to establish Alley 21 not merely as a company that uses AI, but as a company specializing in <strong>accountable AI-assisted work</strong> — where evidence, model behavior, and human authority remain distinguishable. That is supported by the documented portfolio; whether it becomes Alley 21’s primary market position remains a business decision rather than a demonstrated outcome.</p>
+</section>
+
+<!-- ================= 9. NEXT STEPS ================= -->
+<section id="next">
+  <div class="sec-head"><span class="sec-num">09</span><h2>Immediate next steps</h2></div>
+  <p>The most useful academic milestone and the most useful business milestone, side by side — everything else on this page feeds one of these.</p>
+  <ul class="checks">
+    <li><b>Paper:</b> pick the venue for “Keeping Generative AI Within Its Limits,” then do the venue-specific prep — anonymize the case material, write the AI-use disclosure, build the separate title page. <span class="why">Academic milestone #1: one defensible, independently submitted paper.</span></li>
+    <li><b>Journal inquiries:</b> decide whether to send the three drafted inquiry emails (AI for Society, Technophany, Constructivist Foundations). <span class="why">Drafted November 12, 2026 — nothing sent. Confirm first which manuscript the affiliation-focused list was scoped for.</span></li>
+    <li><b>Myers &amp; Briggs proposal:</b> evaluate for revision, resubmission where eligibility allows, or conversion into a methodological manuscript. <span class="why">The methodological direction already exists; the April 2026 decision was on eligibility, not merit.</span></li>
+    <li><b>Cove Chronicle:</b> get the size/deadline answer from Michael, put the phone number into the approved draft, and sign the one-paragraph split agreement before paying. <span class="why">One test edition at $137.50 each — not a year-long run.</span></li>
+    <li><b>Feature pitch:</b> pitch Stephanie / Alley 21 for a featured-business profile in The Cove Chronicle, in parallel with the ad decision. <span class="why">Costs nothing; separate from the ad buy.</span></li>
+    <li><b>FSU Panama City:</b> identify one or two concrete collaboration opportunities and the faculty or program leads to approach. <span class="why">Business milestone #1: one defined workshop or practical pilot, evaluated before expansion.</span></li>
+    <li><b>Structure:</b> verify the Stripe account’s registered name / tax ID and execute the short written IP license / revenue agreement. <span class="why">Precondition for any payout change to Alley 21 or published Terms.</span></li>
+    <li><b>Grants:</b> pick one existing draft (Amber or Women Founders) and either submit it or drop it. <span class="why">Both currently exist as drafts only, with no submission on record.</span></li>
+    <li class="done"><b>Ad draft approved</b> for the Cove Chronicle, with the phone number as the only placeholder left. <span class="why">Recorded November 11, 2026.</span></li>
+    <li class="done"><b>Journal requirements sweep completed</b> — top-five shortlist plus the adjudicated affiliation list, all checked against publishers’ own guidelines. <span class="why">November 12, 2026. See §05.</span></li>
+  </ul>
+</section>
+
+<!-- ================= 10. DECISIONS ================= -->
+<section id="decisions">
+  <div class="sec-head"><span class="sec-num">10</span><h2>Decisions log</h2></div>
+  <div class="tblwrap">
+  <table>
+    <thead><tr><th>Date</th><th>Decision / standing position</th></tr></thead>
+    <tbody>
+      <tr><td class="mono">2026-11-12</td><td data-l="Decision">This goals page is scoped to <b>Alley 21 only</b> — Daniel and the business he runs with Stephanie. Raven keeps its own dedicated space; no Raven lane is duplicated here.</td></tr>
+      <tr><td class="mono">2026-11-12</td><td data-l="Decision">Journal-submission track adopted for “Keeping Generative AI Within Its Limits,” following Gaile’s suggestion: find fitting journals, learn their requirements, then reformat to the chosen venue.</td></tr>
+      <tr><td class="mono">2026-11-11</td><td data-l="Decision">Cove Chronicle ad draft approved; phone number is the only remaining placeholder.</td></tr>
+      <tr><td class="mono">2026-10-26</td><td data-l="Decision">Standing instruction: leave ravencalder.com’s footer and payment setup unchanged while the business transfer is deferred.</td></tr>
+      <tr><td class="mono">2026-10-25</td><td data-l="Decision">Business-structure facts verified on Sunbiz: Alley 21 is the registered LLC (Stephanie, member); Extra Mile Tech is an unregistered trade name, so Daniel personally is the counterparty to any licensing/revenue agreement unless he forms an entity first.</td></tr>
+      <tr><td class="mono">2026-09-17</td><td data-l="Decision">FSU Panama City collaboration packet prepared and addressed to Associate Dean Irvin Clark, with a deliberately modest ask: one or two opportunities, a small project, evaluation before expanding.</td></tr>
+    </tbody>
+  </table>
+  </div>
+</section>
+
+<footer>
+  <p><b>About this page.</b> A single self-contained HTML file — built to be dropped into the Alley 21 repository as a hidden page and updated by editing the file. Consolidated November 12, 2026 from the September 17, 2026 FSU Panama City collaboration packet, the corporate portfolio, the November 4, 2026 funding archive, Sunbiz records verified October 25, 2026, publisher guidelines checked November 12, 2026, and the business record through that date. Statuses are labeled as documented: a proposal is not a partnership, a draft is not a submission, and a working application is not scientific validation. Raven Calder’s own roadmap and launch status live in its dedicated space, not here.</p>
+</footer>
+
+</div>
+</body>
+</html>
