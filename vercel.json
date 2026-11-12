@@ -1,0 +1,5 @@
+{
+  "installCommand": "npm install --prefix \"Alley21_Enterprises 3\" --include=dev",
+  "buildCommand": "npm run build --prefix \"Alley21_Enterprises 3\"",
+  "outputDirectory": "Alley21_Enterprises 3/dist/client"
+}
