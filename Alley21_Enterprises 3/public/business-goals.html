@@ -238,11 +238,46 @@
   }
   .callout.green .lbl{color:var(--green)}
 
+  /* ---------- update briefing (first screen) ---------- */
+  .checked{
+    display:inline-block; font-family:"IBM Plex Mono", monospace; font-size:12.5px;
+    letter-spacing:.06em; padding:5px 11px; border:1px solid var(--line-strong);
+    border-radius:999px; background:var(--surface); color:var(--ink-2); margin:0 0 16px;
+  }
+  .checked b{color:var(--ink)}
+  .update-grid{display:grid; grid-template-columns:repeat(3, 1fr); gap:14px; margin:16px 0 4px}
+  .update-card{
+    background:var(--surface); border:1px solid var(--line); border-radius:var(--radius);
+    padding:18px 19px 10px;
+  }
+  .update-card h3{font-size:19px; margin:0 0 10px}
+  .update-card ul{padding-left:18px; margin-bottom:10px}
+  .update-card li{font-size:15px; margin-bottom:8px}
+  .update-card .lbl{
+    font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.13em;
+    text-transform:uppercase; display:block; margin-bottom:8px; color:var(--ink-3);
+  }
+  .update-card.decide{border-color:var(--rust); background:var(--rust-soft)}
+  @media (prefers-color-scheme: dark){ .update-card.decide{background:var(--surface); border-color:var(--rust)} }
+
+  /* ---------- folded archive ---------- */
+  details.fold{
+    border:1px solid var(--line); border-radius:var(--radius);
+    background:var(--surface); padding:4px 20px 8px; margin:14px 0;
+  }
+  details.fold summary{
+    cursor:pointer; font-weight:600; font-size:16px; padding:12px 0;
+    color:var(--ink);
+  }
+  details.fold summary:hover{color:var(--green)}
+  details.fold .hint{font-weight:400; color:var(--ink-3); font-size:14px}
+
   footer{padding:30px 0 0; font-size:13.5px; color:var(--ink-3)}
   footer p{max-width:60em}
 
   /* ---------- responsive ---------- */
   @media (max-width:760px){
+    .update-grid{grid-template-columns:1fr}
     .factbar{grid-template-columns:1fr 1fr}
     .fact{border-right:0; margin-right:0; padding-right:12px}
     .goals{grid-template-columns:1fr}
@@ -274,9 +309,10 @@
 <div class="wrap">
 
 <header class="top">
-  <p class="kicker">Alley 21 Enterprises LLC · Panama City, Florida · Consolidated review — November 12, 2026</p>
+  <p class="kicker">Alley 21 Enterprises LLC · Panama City, Florida · Shared update page</p>
   <h1>Alley 21 Business Goals</h1>
-  <p class="lede">A multidisciplinary business combining <strong>applied artificial intelligence, environmental science, software development, education, research, and commercial products</strong>. Its distinguishing idea is not simply to build AI applications — it is to build systems that help people perform complex work while keeping the underlying evidence, calculations, uncertainty, and human decision-making clearly separated.</p>
+  <p class="checked">Last checked: <b>Thursday, November 12, 2026 · 4:34 PM CST</b></p>
+  <p class="lede">Stephanie Breeden (owner) and Dan Cross (technical director) — <strong>applied AI, environmental science, software, education, and research</strong> in Panama City. Start with the update below: what changed, what’s next together, and what needs a decision. The full record is folded underneath.</p>
   <dl class="factbar">
     <div class="fact"><dt>Entity</dt><dd>Alley 21 Enterprises LLC<span>Florida LLC · Doc. #L26000185075 · Active · Filed March 31, 2026 (Sunbiz, verified Oct 25, 2026)</span></dd></div>
     <div class="fact"><dt>Owner</dt><dd>Stephanie Breeden<span>Registered agent &amp; authorized member · Environmental / regulatory lead</span></dd></div>
@@ -286,6 +322,7 @@
 </header>
 
 <nav class="toc" aria-label="Contents">
+  <a href="#update">Update</a>
   <a href="#goals">Principal goals</a>
   <a href="#portfolio">Portfolio</a>
   <a href="#fsu">FSU collaboration</a>
@@ -297,6 +334,48 @@
   <a href="#next">Next steps</a>
   <a href="#decisions">Decisions log</a>
 </nav>
+
+<!-- ================= UPDATE BRIEFING ================= -->
+<section id="update">
+  <div class="sec-head"><span class="sec-num">Update</span><h2>Where things stand</h2></div>
+  <p class="muted">Last checked <b>Thursday, November 12, 2026, 4:34 PM CST</b>. Detail for everything below is in the sections underneath — this is the short version.</p>
+
+  <div class="update-grid">
+    <article class="update-card">
+      <span class="lbl">What changed</span>
+      <h3>What changed</h3>
+      <ul>
+        <li><b>Thrift Companion paused</b> — no longer in active development (November 2026); kept in the portfolio for the record only.</li>
+        <li><b>Myers &amp; Briggs proposal closed</b> — will not be revised, resubmitted, or retried. The research ideas underneath it are carried forward separately (§05).</li>
+        <li><b>Research ideas moved forward</b> — deterministic cognitive inference and AI-assisted meaning-making are now active lines, alongside epistemic custody and symbolic empiricism.</li>
+        <li><b>University entry corrected</b> — FSU Panama City: sent; receipt acknowledged; no substantive follow-up found (§03).</li>
+        <li><b>Journal work checked</b> — shortlist verified against publishers’ own guidelines (November 12); three inquiry emails drafted, none sent (§05).</li>
+      </ul>
+    </article>
+
+    <article class="update-card">
+      <span class="lbl">Next together</span>
+      <h3>Next together</h3>
+      <ul>
+        <li><b>Cove Chronicle ad — the shared next step.</b> Confirm size and deadline with Michael Christie, put the phone number into the approved draft, and agree the one-paragraph split in writing before paying — one test edition, $137.50 each (§06).</li>
+        <li><b>Cove feature pitch, in parallel:</b> pitch Stephanie / Alley 21 for a featured-business profile in The Cove Chronicle — costs nothing, separate from the ad buy (§06).</li>
+        <li><b>Paper:</b> pick the venue for “Keeping Generative AI Within Its Limits,” then do the venue-specific prep — anonymized case material, AI-use disclosure, separate title page (§05).</li>
+      </ul>
+    </article>
+
+    <article class="update-card decide">
+      <span class="lbl">Needs a decision</span>
+      <h3>Needs a decision</h3>
+      <ul>
+        <li><b>Cove ad:</b> go / no-go on one test edition at $275 split — and what size the $275 actually buys (a July post listed $250 half-page / $500 full-page).</li>
+        <li><b>Journal inquiries:</b> send the three drafted emails (AI for Society, Technophany, Constructivist Foundations) or hold — and confirm which manuscript the affiliation-focused list was scoped for.</li>
+        <li><b>Grants:</b> pick one existing draft (Amber or Women Founders) and submit it, or drop it — both are drafts only, nothing submitted (§07).</li>
+        <li><b>Before money moves:</b> verify the Stripe account’s registered name / tax ID and sign the short written IP license / revenue agreement (§08).</li>
+      </ul>
+    </article>
+  </div>
+  <p class="small muted">Raven Calder is not tracked on this page — it has its own desk at <a href="https://ravencalder.com">ravencalder.com</a> and its dedicated space. It appears below only where the Alley 21 record itself names it.</p>
+</section>
 
 <!-- ================= 1. PRINCIPAL GOALS ================= -->
 <section id="goals">
@@ -327,7 +406,7 @@
       <div class="badges"><span class="badge b-info">Developing</span></div>
       <h3>AI education &amp; workforce development</h3>
       <p>Create practical, tool-neutral AI workshops and training for small businesses, working professionals, students, and community organizations.</p>
-      <p class="next"><b>First vehicle:</b> the FSU Panama City proposal — one defined workshop or practical pilot, evaluated before expanding.</p>
+      <p class="next"><b>First vehicle:</b> the FSU Panama City proposal — sent; receipt acknowledged; no substantive follow-up found (see §03). One defined workshop or practical pilot remains the model if that channel reopens.</p>
     </article>
 
     <article class="goal">
@@ -340,7 +419,7 @@
     <article class="goal wide">
       <div class="badges"><span class="badge b-info">Developing</span></div>
       <h3>Commercial products &amp; resale operations</h3>
-      <p>Develop revenue through Raven Calder, software products, client services, and related creative or publishing projects. Raven is the most extensively documented product in the portfolio; it is tracked in its own dedicated space and appears here only as part of the Alley 21 portfolio — this page does not duplicate its roadmap.</p>
+      <p>Develop revenue through software products, client services, and related creative or publishing projects. Raven Calder sits in this portfolio, but its roadmap and launch status live at its own desk — <a href="https://ravencalder.com">ravencalder.com</a> — and are not duplicated here.</p>
       <p class="next"><b>Status update — November 2026:</b> Thrift Companion is no longer in active development. The resale-workflow project is paused and is not the near-term revenue focus; commercial attention returns to client services, Raven Calder, and applied AI work.</p>
     </article>
   </div>
@@ -349,8 +428,10 @@
 <!-- ================= 2. PORTFOLIO ================= -->
 <section id="portfolio">
   <div class="sec-head"><span class="sec-num">02</span><h2>Software &amp; commercial project portfolio</h2></div>
-  <p>The September 2026 portfolio identifies the following projects. These are documented development efforts; their individual release and revenue statuses have not all been independently rechecked, and they are listed as documented — not as finished products.</p>
+  <p>The September 2026 portfolio identifies the following projects. These are documented development efforts; their individual release and revenue statuses have not all been independently rechecked, and they are listed as documented — not as finished products. Older and paused projects are kept here for the record, folded below the current work.</p>
 
+  <details class="fold">
+  <summary>Full portfolio — including older and paused projects <span class="hint">(folded — tap to open)</span></summary>
   <div class="tblwrap">
   <table>
     <caption>Portfolio as documented in the September 2026 packet</caption>
@@ -359,7 +440,7 @@
       <tr>
         <td>Raven Calder / The Woven Map</td>
         <td data-l="Purpose">Symbolic interpretation platform with deterministic calculations, AI explanations, research protocols, accounts, and subscriptions</td>
-        <td data-l="Note">Most extensively documented project. Tracked in its own dedicated space; listed here for the portfolio relationship only.</td>
+        <td data-l="Note">Most extensively documented project. Tracked at its own desk — <a href="https://ravencalder.com">ravencalder.com</a> — listed here for the portfolio relationship only.</td>
       </tr>
       <tr>
         <td>Thrift Companion <span class="badge b-plain">Inactive</span></td>
@@ -400,6 +481,7 @@
   </table>
   </div>
   <p class="small muted">The other applications demonstrate broader technical capabilities and possible commercial opportunities; none is presented here as a launched, revenue-earning product.</p>
+  </details>
 </section>
 
 <!-- ================= 3. FSU ================= -->
@@ -407,9 +489,12 @@
   <div class="sec-head"><span class="sec-num">03</span><h2>Academic &amp; institutional collaboration</h2></div>
 
   <div class="record">
-    <div class="badges"><span class="badge b-info">Exploratory proposal</span><span class="badge b-plain">Not a signed partnership</span><span class="badge b-plain">Not an awarded grant</span></div>
+    <div class="badges"><span class="badge b-wait">Sent — receipt acknowledged</span><span class="badge b-plain">No substantive follow-up found</span><span class="badge b-plain">Not a signed partnership</span><span class="badge b-plain">Not an awarded grant</span></div>
     <h3>Florida State University Panama City — collaboration prospectus</h3>
     <p class="meta">Prepared September 17, 2026 · Addressed to Associate Dean Irvin Clark</p>
+    <dl class="kv">
+      <dt>Status</dt><dd><strong>Sent; receipt acknowledged; no substantive follow-up found.</strong></dd>
+    </dl>
     <p>The packet names <strong>Stephanie Breeden</strong> as owner and environmental/regulatory lead, and <strong>Dan Cross</strong> as technical director responsible for software, AI workflows, and systems development. It identifies four possible pathways:</p>
     <ul>
       <li>AI education and professional training.</li>
@@ -418,7 +503,7 @@
       <li>Longer-term applied AI research, institutional grants, and sponsored research.</li>
     </ul>
     <p>It also references FSU Panama City’s <strong>ASCENT</strong> and <strong>InSPIRE</strong> initiatives as potential points of alignment.</p>
-    <p class="next" style="border-top:1px dashed var(--line-strong); padding-top:10px"><b>Documented objective — deliberately modest:</b> identify one or two appropriate collaboration opportunities, connect with faculty or program leads, undertake a small project, and evaluate it before expanding.</p>
+    <p class="next" style="border-top:1px dashed var(--line-strong); padding-top:10px"><b>Status — corrected November 12, 2026:</b> sent; receipt acknowledged; no substantive follow-up found. The packet’s own ask was deliberately modest — one or two collaboration opportunities, a small project, evaluation before expanding — but on the current record there is no active follow-up step unless a reply arrives.</p>
   </div>
 </section>
 
@@ -598,7 +683,7 @@
     </tbody>
   </table>
   </div>
-  <p>The FSU pathway (§03) remains the more concrete funding-adjacent route: institutional grants and sponsored research sit inside that proposal as a longer-term possibility, not as anything applied for.</p>
+  <p>The FSU pathway (§03) names institutional grants and sponsored research as a longer-term possibility inside that proposal — not anything applied for — and its current status is: sent; receipt acknowledged; no substantive follow-up found.</p>
 </section>
 
 <!-- ================= 8. STRUCTURE ================= -->
@@ -624,9 +709,8 @@
     <p>Context that makes this practical rather than personal: Daniel owes Stephanie about <b>$4,000</b> (record, October 28, 2026), and she pays for ChatGPT Pro — asking for more money, or splitting new costs informally, is difficult on both sides. Written agreements are what keep that from becoming friction. Standing instruction (October 26, 2026): leave ravencalder.com’s footer and payment setup unchanged while the business transfer is deferred.</p>
   </div>
 
-  <h3>Raven Calder — relationship note</h3>
-  <p>Raven is documented as a working application at ravencalder.com with a Next.js/TypeScript architecture, persistent user data, authentication, and subscription infrastructure. Its development goals include improving the reliability of calculated charts, supporting unknown or approximate birth times without false precision, generating accessible interpretations, preserving disagreement, and distinguishing symbolic proposals from demonstrated facts; the broader product direction includes the Beginner Mirror, Full Blueprint, relational analysis, Symbolic Weather, and the Balance Meter. The FSU packet also documents a proposed modest Kickstarter campaign focused on user testing, refinement, continued research, and public launch — whether that campaign has since launched has not been independently verified.</p>
-  <p class="muted">Per Daniel’s scoping, Raven is <strong>not</strong> a lane of this page: it has its own dedicated space, and its launch status, roadmap, and decisions live there. It appears here only where the Alley 21 record itself names it — the portfolio (§02) and the business structure above.</p>
+  <h3>Raven Calder — see its own desk</h3>
+  <p>Raven is <strong>not</strong> a lane of this page. Its launch status, roadmap, and decisions live at its own desk — <a href="https://ravencalder.com">ravencalder.com</a> and its dedicated space — and are not duplicated here. The one structural fact that belongs on this page: the FSU packet documents Raven as an Alley 21 portfolio project, and the standing instruction (October 26, 2026) is to leave ravencalder.com’s footer and payment setup unchanged while the business transfer is deferred.</p>
 
   <h3>Assessment of the direction</h3>
   <p>Alley 21 currently contains three potentially sustainable lines of business: <strong>professional environmental/regulatory services, applied AI products and consulting, and education/research collaboration.</strong> There is a coherent connection between them — the same constraints developed for Raven (authoritative inputs, source traceability, calibrated uncertainty, restricted automation, human oversight) apply to regulatory document analysis, business decision tools, and responsible AI education.</p>
@@ -643,7 +727,7 @@
     <li><b>Research ideas — move forward:</b> advance the research program in §05 — epistemic custody, symbolic empiricism and falsifiability, deterministic cognitive inference, and AI-assisted meaning-making — into outlines, literature reviews, and study designs. <span class="why">These ideas are carried forward in their own right, independent of the closed Myers &amp; Briggs proposal.</span></li>
     <li><b>Cove Chronicle:</b> get the size/deadline answer from Michael, put the phone number into the approved draft, and sign the one-paragraph split agreement before paying. <span class="why">One test edition at $137.50 each — not a year-long run.</span></li>
     <li><b>Feature pitch:</b> pitch Stephanie / Alley 21 for a featured-business profile in The Cove Chronicle, in parallel with the ad decision. <span class="why">Costs nothing; separate from the ad buy.</span></li>
-    <li><b>FSU Panama City:</b> identify one or two concrete collaboration opportunities and the faculty or program leads to approach. <span class="why">Business milestone #1: one defined workshop or practical pilot, evaluated before expansion.</span></li>
+    <li><b>FSU Panama City:</b> packet sent; receipt acknowledged; no substantive follow-up found. <span class="why">Standing status as corrected November 12, 2026 — no active follow-up step unless a reply arrives. The modest model, if the channel reopens, remains one defined workshop or practical pilot, evaluated before expansion.</span></li>
     <li><b>Structure:</b> verify the Stripe account’s registered name / tax ID and execute the short written IP license / revenue agreement. <span class="why">Precondition for any payout change to Alley 21 or published Terms.</span></li>
     <li><b>Grants:</b> pick one existing draft (Amber or Women Founders) and either submit it or drop it. <span class="why">Both currently exist as drafts only, with no submission on record.</span></li>
     <li class="done"><b>Ad draft approved</b> for the Cove Chronicle, with the phone number as the only placeholder left. <span class="why">Recorded November 11, 2026.</span></li>
@@ -660,6 +744,8 @@
   <table>
     <thead><tr><th>Date</th><th>Decision / standing position</th></tr></thead>
     <tbody>
+      <tr><td class="mono">2026-11-12</td><td data-l="Decision"><b>Update page restructured.</b> First screen is now a short briefing — What changed / Next together / Needs a decision — with a last-checked time. The Cove Chronicle ad is carried as a shared next step; older projects stay folded below; Raven is linked to its own desk rather than duplicated here.</td></tr>
+      <tr><td class="mono">2026-11-12</td><td data-l="Decision"><b>FSU Panama City entry corrected.</b> Status now reads: sent; receipt acknowledged; no substantive follow-up found.</td></tr>
       <tr><td class="mono">2026-11-12</td><td data-l="Decision"><b>Thrift Companion — no longer in active development.</b> Paused and removed as the near-term revenue focus; retained in the portfolio for the record only.</td></tr>
       <tr><td class="mono">2026-11-12</td><td data-l="Decision"><b>Myers &amp; Briggs proposal — closed, will not be tried again.</b> No revision or resubmission. Its underlying research ideas, and the wider research program in §05, are all carried forward separately.</td></tr>
       <tr><td class="mono">2026-11-12</td><td data-l="Decision">This goals page is scoped to <b>Alley 21 only</b> — Daniel and the business he runs with Stephanie. Raven keeps its own dedicated space; no Raven lane is duplicated here.</td></tr>
@@ -674,7 +760,7 @@
 </section>
 
 <footer>
-  <p><b>About this page.</b> A single self-contained HTML file — built to be dropped into the Alley 21 repository as a hidden page and updated by editing the file. Consolidated November 12, 2026 from the September 17, 2026 FSU Panama City collaboration packet, the corporate portfolio, the November 4, 2026 funding archive, Sunbiz records verified October 25, 2026, publisher guidelines checked November 12, 2026, and the business record through that date. Statuses are labeled as documented: a proposal is not a partnership, a draft is not a submission, and a working application is not scientific validation. Raven Calder’s own roadmap and launch status live in its dedicated space, not here.</p>
+  <p><b>About this page.</b> A single self-contained HTML file — built to be dropped into the Alley 21 repository as a hidden page and updated by editing the file. Consolidated November 12, 2026 from the September 17, 2026 FSU Panama City collaboration packet, the corporate portfolio, the November 4, 2026 funding archive, Sunbiz records verified October 25, 2026, publisher guidelines checked November 12, 2026, and the business record through that date. Last checked November 12, 2026, 4:34 PM CST. Statuses are labeled as documented: a proposal is not a partnership, a draft is not a submission, and a working application is not scientific validation. Raven Calder’s own roadmap and launch status live at its own desk, not here.</p>
 </footer>
 
 </div>
