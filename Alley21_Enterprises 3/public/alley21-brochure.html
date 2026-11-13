@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+<meta name="color-scheme" content="light dark" />
+<link rel="icon" href="data:," />
+<title>Alley 21 Enterprises — Proposed Brochure (Draft, November 2026)</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:ital,wght@0,500;0,600;0,700;1,500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg:#fcfcfb; --surface:#ffffff; --surface-2:#f1f4f1;
+    --ink:#16211c; --ink-2:#3d4a43; --ink-3:#66736c;
+    --line:#d9dfd9; --line-strong:#b9c4ba;
+    --green:#1d4d3a; --green-soft:#e3ede6;
+    --rust:#9c4a1f; --rust-soft:#f6e8dd;
+    --gold:#7a5c14; --gold-soft:#f3ecd4;
+  }
+  @media (prefers-color-scheme: dark){
+    :root{
+      --bg:#101613; --surface:#171f1a; --surface-2:#1e2821;
+      --ink:#e8ede9; --ink-2:#c2cdc4; --ink-3:#93a198;
+      --line:#2c3a31; --line-strong:#435249;
+      --green:#8fc7a8; --green-soft:#21382c;
+      --rust:#e0a173; --rust-soft:#3d2c1f;
+      --gold:#d9be6e; --gold-soft:#38321c;
+    }
+  }
+  *{box-sizing:border-box}
+  body{
+    margin:0; background:var(--bg); color:var(--ink);
+    font-family:"IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+    font-size:16px; line-height:1.5; -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:880px; margin:0 auto; padding:0 20px 56px}
+  .draft-banner{
+    margin:20px 0 0; padding:10px 14px; border:1.5px dashed var(--rust);
+    background:var(--rust-soft); border-radius:8px; font-size:14px;
+  }
+  .draft-banner b{letter-spacing:.06em; text-transform:uppercase; font-size:12.5px}
+  header.top{padding:28px 0 6px; border-bottom:3px solid var(--ink)}
+  .kicker{
+    font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:12px;
+    letter-spacing:.14em; text-transform:uppercase; color:var(--ink-3); margin:0 0 12px;
+  }
+  h1{
+    font-family:"IBM Plex Serif", Georgia, serif; font-weight:700;
+    font-size:clamp(34px, 6vw, 50px); line-height:1.05; margin:0 0 10px;
+  }
+  .tagline{
+    font-family:"IBM Plex Serif", Georgia, serif; font-style:italic;
+    font-size:20px; color:var(--green); margin:0 0 14px;
+  }
+  .lede{font-size:17.5px; color:var(--ink-2); margin:0 0 18px; max-width:44em}
+  .factbar{
+    display:grid; grid-template-columns:1fr 1fr; gap:10px 28px;
+    border-top:1px solid var(--line); padding-top:14px; margin-bottom:6px;
+  }
+  .fact dt{
+    font-family:"IBM Plex Mono", monospace; font-size:11px; letter-spacing:.12em;
+    text-transform:uppercase; color:var(--ink-3); margin-bottom:2px;
+  }
+  .fact dd{margin:0; font-weight:600; font-size:16.5px}
+  .fact dd span{display:block; font-weight:400; font-size:14px; color:var(--ink-2)}
+  h2{
+    font-family:"IBM Plex Serif", Georgia, serif; font-size:24px;
+    margin:30px 0 10px; padding-bottom:6px; border-bottom:1.5px solid var(--line-strong);
+  }
+  .grid{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+  @media (max-width:640px){ .grid, .factbar{grid-template-columns:1fr} }
+  .card{
+    background:var(--surface); border:1px solid var(--line); border-radius:10px;
+    padding:14px 16px;
+  }
+  .card h3{margin:0 0 6px; font-size:16.5px; color:var(--green)}
+  .card p{margin:0; font-size:15px; color:var(--ink-2)}
+  ol.principles{margin:8px 0 0; padding-left:22px}
+  ol.principles li{margin-bottom:5px}
+  .callout{
+    background:var(--green-soft); border-radius:10px; padding:16px 18px; margin-top:14px;
+  }
+  .callout p{margin:0}
+  .review-note{
+    margin-top:34px; padding:14px 16px; border:1.5px dashed var(--gold);
+    background:var(--gold-soft); border-radius:8px; font-size:14.5px;
+  }
+  .review-note b{letter-spacing:.06em; text-transform:uppercase; font-size:12.5px}
+  footer{
+    margin-top:30px; padding-top:12px; border-top:1px solid var(--line);
+    font-size:13.5px; color:var(--ink-3);
+  }
+  a{color:var(--green); text-underline-offset:3px}
+  @media print{
+    .draft-banner{border-style:solid}
+    body{font-size:11.5pt}
+    .wrap{max-width:none}
+    .card, .callout, header.top{break-inside:avoid}
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <p class="draft-banner"><b>Proposed brochure — draft for review</b><br>
+  Draft, November 2026. This replaces the May 2023 Extra Mile Tech brochure. It is a proposal for review and updating — not a final printed piece. Contact details marked “to confirm” are open choices, and pricing is by scope, agreed in writing before work begins.</p>
+
+<header class="top">
+  <p class="kicker">Alley 21 Enterprises LLC · Panama City, Florida</p>
+  <h1>Alley 21 Enterprises</h1>
+  <p class="tagline">Practical AI, environmental expertise, and software that keeps humans in charge.</p>
+  <p class="lede">Need help making AI useful rather than overwhelming, organizing a mountain of documents, or simplifying repetitive work? We help you find a practical approach — starting with the problem you are actually trying to solve, not with a complicated pitch.</p>
+  <dl class="factbar">
+    <div class="fact"><dt>Owner</dt><dd>Stephanie Breeden<span>Registered agent &amp; authorized member · Environmental / regulatory lead</span></dd></div>
+    <div class="fact"><dt>Technical director</dt><dd>Dan Cross<span>Software, AI workflows &amp; systems development · Authorized person — not a member</span></dd></div>
+  </dl>
+</header>
+
+  <h2>What we do now</h2>
+  <div class="grid">
+    <div class="card">
+      <h3>Applied AI &amp; technology services</h3>
+      <p>Useful AI-assisted workflows, automation, document-processing systems, and decision-support tools for individuals, businesses, and professional clients.</p>
+    </div>
+    <div class="card">
+      <h3>Environmental science &amp; regulatory work</h3>
+      <p>Stephanie’s NEPA/CEQA, permitting, environmental-assessment, and compliance background — applied to professional services and carefully bounded AI-assisted environmental review.</p>
+    </div>
+    <div class="card">
+      <h3>AI education &amp; workforce development</h3>
+      <p>Practical, tool-neutral AI workshops and training for small businesses, working professionals, students, and community organizations.</p>
+    </div>
+    <div class="card">
+      <h3>Custom software &amp; products</h3>
+      <p>Software and AI workflows built for a defined job — from clearer documents and everyday AI tools to custom systems. Documented projects include Raven Calder and a portfolio of document, workflow, and decision tools.</p>
+    </div>
+    <div class="card">
+      <h3>Research &amp; academic collaboration</h3>
+      <p>Research protocols, external review, and collaboration with academic institutions — without pretending that working software, on its own, is scientific validation.</p>
+    </div>
+    <div class="card">
+      <h3>Everyday technology help, in context</h3>
+      <p>The hands-on help Extra Mile Tech started with — setups, documents, devices, plain-English training — still matters. Now it sits inside the larger work above, instead of being sold by the half-hour from a price list.</p>
+    </div>
+  </div>
+
+  <h2>How we work</h2>
+  <p>Our distinguishing idea is not simply to build AI applications. It is to build systems that help people perform complex work while keeping the underlying evidence, calculations, uncertainty, and human decision-making clearly separated.</p>
+  <ol class="principles">
+    <li>Start with a worthwhile problem.</li>
+    <li>Preserve authoritative information.</li>
+    <li>Make uncertainty visible.</li>
+    <li>Define when human review is required.</li>
+    <li>Test small implementations before scaling.</li>
+  </ol>
+
+  <div class="callout">
+    <p><b>Start with a conversation.</b> Message us with what you’re trying to accomplish. We’ll start there. Pricing is by project and scope, agreed in writing before work begins — there is no half-hour price list.</p>
+  </div>
+
+  <div class="review-note">
+    <p><b>Reviewer note — remove before printing</b></p>
+    <p><b>What changed from the 2023 Extra Mile Tech brochure:</b> the 2023 piece was solo, consumer tech help — device and printer setups, OS reinstalls, and tutorials, priced at $100 a setup and $50 a half-hour, plus mileage. The focus has moved considerably: Alley 21 is now a joint business, Stephanie Breeden is the owner, and the offer is applied AI, environmental/regulatory work, training, custom software, and research collaboration. The old prices, the old phone number ((850) 296-0961, printed in 2023), and the truncated 2023 email are deliberately <i>not</i> carried over.</p>
+    <p><b>To confirm before this is final:</b> the phone number and email to print, whether to keep the “first conversation” offer and any wording for it, and Stephanie’s review of the environmental-services wording.</p>
+  </div>
+
+  <footer>
+    <p>Alley 21 Enterprises LLC · Florida LLC · Doc. #L26000185075 · Active · Filed March 31, 2026 · Panama City, Florida · <a href="https://alley21.vercel.app/">alley21.vercel.app</a><br>
+    Contact: Stephanie Breeden, Owner · Dan Cross, Technical Director · Phone / email: <i>to confirm before printing</i><br>
+    Proposed brochure prepared by Muse, November 12, 2026 — draft for Daniel Cross and Stephanie Breeden to review and revise.</p>
+  </footer>
+
+</div>
+</body>
+</html>
