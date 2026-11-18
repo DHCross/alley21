@@ -1,0 +1,11 @@
+{
+  "name": "alley21-workspace",
+  "private": true,
+  "type": "module",
+  "dependencies": {
+    "@vercel/blob": "^2.3.3"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2"
+  }
+}

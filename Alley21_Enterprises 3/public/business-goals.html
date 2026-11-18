@@ -274,6 +274,9 @@
 
   footer{padding:30px 0 0; font-size:13.5px; color:var(--ink-3)}
   footer p{max-width:60em}
+  .brochure-link{margin:16px 0 4px; padding:12px 14px; border:1px solid var(--line-strong); border-radius:8px; background:var(--surface-2)}
+  .record .next{border-top:1px dashed var(--line-strong); padding-top:10px}
+  h3.sub-tight{margin-top:18px}
 
   /* ---------- responsive ---------- */
   @media (max-width:760px){
@@ -304,9 +307,11 @@
     .record, .goal{break-inside:avoid}
   }
 </style>
+<link rel="stylesheet" href="/living-doc-editor.css" />
 </head>
-<body>
+<body data-living-doc="business-goals">
 <div class="wrap">
+<div id="living-doc-root">
 
 <header class="top">
   <p class="kicker">Alley 21 Enterprises LLC · Panama City, Florida · Shared update page</p>
@@ -319,7 +324,7 @@
     <div class="fact"><dt>Technical director</dt><dd>Dan Cross<span>Software, AI workflows &amp; systems development · Authorized person — not a member</span></dd></div>
     <div class="fact"><dt>Clearest statement</dt><dd>FSU Panama City packet<span>Collaboration packet prepared September 17, 2026</span></dd></div>
   </dl>
-  <p class="brochure-link" style="margin:16px 0 4px; padding:12px 14px; border:1px solid var(--line-strong); border-radius:8px; background:var(--surface-2)"><b>Proposed brochure (draft, November 2026)</b> — a one-page brochure with what Alley 21 offers now, replacing the May 2023 Extra Mile Tech brochure. <a href="alley21-brochure.html">View the proposed brochure</a> · <a href="alley21-brochure.html" download="alley21-brochure.html">Download it</a> <span class="muted">(single HTML file — open it in a browser, or print it to PDF)</span></p>
+  <p class="brochure-link"><b>Proposed brochure (draft, November 2026)</b> — a one-page brochure with what Alley 21 offers now, replacing the May 2023 Extra Mile Tech brochure. <a href="alley21-brochure.html">View the proposed brochure</a> · <a href="alley21-brochure.html" download="alley21-brochure.html">Download it</a> <span class="muted">(single HTML file — open it in a browser, or print it to PDF)</span></p>
 </header>
 
 <nav class="toc" aria-label="Contents">
@@ -505,7 +510,7 @@
       <li>Longer-term applied AI research, institutional grants, and sponsored research.</li>
     </ul>
     <p>It also references FSU Panama City’s <strong>ASCENT</strong> and <strong>InSPIRE</strong> initiatives as potential points of alignment.</p>
-    <p class="next" style="border-top:1px dashed var(--line-strong); padding-top:10px"><b>Status — corrected November 12, 2026:</b> sent; receipt acknowledged; no substantive follow-up found. The packet’s own ask was deliberately modest — one or two collaboration opportunities, a small project, evaluation before expanding — but on the current record there is no active follow-up step unless a reply arrives.</p>
+    <p class="next"><b>Status — corrected November 12, 2026:</b> sent; receipt acknowledged; no substantive follow-up found. The packet’s own ask was deliberately modest — one or two collaboration opportunities, a small project, evaluation before expanding — but on the current record there is no active follow-up step unless a reply arrives.</p>
   </div>
 </section>
 
@@ -658,7 +663,7 @@
     <p><b>The open pricing question:</b> a July post from the same seller listed $250 half-page / $500 full-page, so the $275 figure does not say what size it buys. That is question #1 for him.</p>
     <p><b>The offer, repackaged for households:</b> 2,500 Cove households won’t buy the pitch taken to colleges and developers. One ad, two panels, one brand — (1) for the small businesses many Cove residents own: <em>“Practical AI for Panama City businesses — training, workflow automation, and simple custom tools, without hiring IT staff”</em>; (2) for homeowners, realtors, and builders in an old waterfront neighborhood: Stephanie’s environmental side — permitting / wetland checks before renovating, building, or buying. One trackable offer over both: a free 30-minute consult, with a QR code / unique URL so the $275 can be judged. One modest job at $500+ pays for two editions. Raven stays out of this ad.</p>
     <p><b>The free angle:</b> the seller is explicitly looking for families/businesses to feature next year. Stephanie as a Cove business owner is a legitimate pitch for an editorial feature — that costs nothing and is separate from buying the ad.</p>
-    <h3 style="margin-top:18px">Questions ready for Michael / for Stephanie</h3>
+    <h3 class="sub-tight">Questions ready for Michael / for Stephanie</h3>
     <ul class="checks">
       <li>What size, dimensions, and color is the $275 spot? Deadline and date for the next edition?</li>
       <li>Discount for 3 or 6 editions — and can we stop after one?</li>
@@ -766,5 +771,7 @@
 </footer>
 
 </div>
+</div>
+<script type="module" src="/living-doc-editor.js"></script>
 </body>
 </html>

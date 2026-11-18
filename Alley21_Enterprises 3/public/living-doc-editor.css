@@ -1,0 +1,567 @@
+/* Living Doc Editor UI — matches Alley 21 light/dark editorial tokens.
+   Excluded completely in @media print. */
+
+.ld-bar-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 40;
+  background: color-mix(in srgb, var(--bg, #fcfcfb) 92%, transparent);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--line, #d9dfd9);
+}
+
+.ld-bar {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 8px 20px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 14px;
+  font-family: "IBM Plex Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  font-size: 13.5px;
+}
+
+.ld-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--ink-2, #3d4a43);
+  min-width: 0;
+}
+
+.ld-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11.5px;
+  letter-spacing: 0.04em;
+  padding: 3px 9px;
+  border-radius: 999px;
+  border: 1px solid var(--line-strong, #b9c4ba);
+  background: var(--surface, #ffffff);
+  color: var(--ink, #16211c);
+}
+
+.ld-pill-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 999px;
+  background: var(--green, #1d4d3a);
+}
+
+.ld-pill.is-dirty .ld-pill-dot {
+  background: var(--rust, #9c4a1f);
+}
+
+.ld-meta-text {
+  font-size: 12.5px;
+  color: var(--ink-3, #66736c);
+}
+
+.ld-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+}
+
+.ld-group {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.ld-sep {
+  display: inline-block;
+  inline-size: 0;
+  block-size: 20px;
+  border-inline-start: 1px solid var(--line-strong, #b9c4ba);
+  margin: 0 2px;
+}
+
+.ld-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  min-inline-size: 24px;
+  min-block-size: 32px;
+  padding: 5px 11px;
+  border-radius: 7px;
+  border: 1px solid var(--line-strong, #b9c4ba);
+  background: var(--surface, #ffffff);
+  color: var(--ink, #16211c);
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  line-height: 1.2;
+}
+
+@media (pointer: coarse) {
+  .ld-btn {
+    min-block-size: 40px;
+    padding: 7px 13px;
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .ld-btn {
+    transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease;
+  }
+}
+
+.ld-btn:focus-visible,
+.ld-mini-btn:focus-visible,
+.ld-add-btn:focus-visible {
+  outline: 2px solid var(--green, #1d4d3a);
+  outline-offset: 2px;
+}
+
+@media (hover: hover) {
+  .ld-btn:hover:not([aria-disabled="true"]) {
+    border-color: var(--green, #1d4d3a);
+    color: var(--green, #1d4d3a);
+  }
+}
+
+.ld-btn[aria-pressed="true"] {
+  background: var(--green, #1d4d3a);
+  border-color: var(--green, #1d4d3a);
+  color: #ffffff;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.25);
+}
+
+@media (prefers-color-scheme: dark) {
+  .ld-btn[aria-pressed="true"] {
+    color: #101613;
+  }
+}
+
+.ld-btn-primary {
+  background: var(--green, #1d4d3a);
+  border-color: var(--green, #1d4d3a);
+  color: #ffffff;
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: dark) {
+  .ld-btn-primary {
+    color: #101613;
+  }
+}
+
+@media (hover: hover) {
+  .ld-btn-primary:hover:not([aria-disabled="true"]) {
+    background: var(--green, #1d4d3a);
+    color: #ffffff;
+    filter: brightness(1.08);
+  }
+  @media (prefers-color-scheme: dark) {
+    .ld-btn-primary:hover:not([aria-disabled="true"]) {
+      color: #101613;
+    }
+  }
+}
+
+.ld-btn-danger {
+  border-color: var(--rust, #9c4a1f);
+  color: var(--rust, #9c4a1f);
+}
+
+.ld-btn[aria-disabled="true"] {
+  opacity: 0.45;
+  cursor: not-allowed;
+}
+
+.ld-save-drawer {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 20px 9px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 8px;
+}
+
+.ld-save-drawer[hidden] {
+  display: none;
+}
+
+.ld-summary-input {
+  flex: 1 1 240px;
+  min-width: 0;
+  min-block-size: 32px;
+  padding: 5px 10px;
+  border-radius: 7px;
+  border: 1px solid var(--line-strong, #b9c4ba);
+  background: var(--surface, #ffffff);
+  color: var(--ink, #16211c);
+  font-family: inherit;
+  font-size: 13px;
+}
+
+.ld-summary-input:focus-visible {
+  outline: 2px solid var(--green, #1d4d3a);
+  outline-offset: 1px;
+}
+
+.ld-status-sr {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip-path: inset(50%);
+  white-space: nowrap;
+  border: 0;
+}
+
+.ld-toast {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 60;
+  max-width: 340px;
+  padding: 10px 14px;
+  border-radius: 9px;
+  border: 1px solid var(--line-strong, #b9c4ba);
+  background: var(--surface, #ffffff);
+  color: var(--ink, #16211c);
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+  font-size: 13.5px;
+}
+
+.ld-toast[hidden] {
+  display: none;
+}
+
+.ld-toast.is-error {
+  border-color: var(--red, #8c2f2f);
+  background: var(--red-soft, #f5e3e1);
+}
+
+/* ---------- Edit mode inside document ---------- */
+
+body.ld-editing nav.toc {
+  top: 50px;
+}
+
+body.ld-editing [contenteditable="true"] {
+  border-radius: 4px;
+  outline: 1px dashed transparent;
+  outline-offset: 2px;
+}
+
+@media (hover: hover) {
+  body.ld-editing [contenteditable="true"]:hover {
+    outline-color: var(--line-strong, #b9c4ba);
+    background: color-mix(in srgb, var(--surface-2, #f1f4f1) 45%, transparent);
+  }
+}
+
+body.ld-editing [contenteditable="true"]:focus {
+  outline: 2px solid var(--green, #1d4d3a);
+  outline-offset: 2px;
+  background: var(--surface, #ffffff);
+}
+
+body.ld-editing .badge {
+  cursor: pointer;
+  outline: 1px dashed currentColor;
+  outline-offset: 2px;
+}
+
+body.ld-editing .goal,
+body.ld-editing .record,
+body.ld-editing .card,
+body.ld-editing .update-card,
+body.ld-editing .draft-banner,
+body.ld-editing .review-note {
+  position: relative;
+}
+
+body.ld-editing ul.checks li {
+  padding-right: 34px;
+}
+
+body.ld-editing .update-card li,
+body.ld-editing ol.principles li {
+  position: relative;
+  padding-right: 28px;
+}
+
+.ld-check-btn {
+  position: absolute;
+  left: -2px;
+  top: 9px;
+  width: 24px;
+  height: 24px;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.ld-check-btn:focus-visible {
+  outline: 2px solid var(--green, #1d4d3a);
+  outline-offset: 1px;
+}
+
+.ld-mini-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-inline-size: 22px;
+  min-block-size: 22px;
+  padding: 1px 7px;
+  border-radius: 5px;
+  border: 1px solid var(--line-strong, #b9c4ba);
+  background: var(--surface, #ffffff);
+  color: var(--ink-2, #3d4a43);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  line-height: 1.2;
+  cursor: pointer;
+}
+
+.ld-mini-btn.is-del {
+  color: var(--red, #8c2f2f);
+  border-color: color-mix(in srgb, var(--red, #8c2f2f) 45%, transparent);
+}
+
+.ld-row-del {
+  position: absolute;
+  right: 2px;
+  top: 7px;
+}
+
+.ld-card-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.ld-add-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 8px;
+  margin-bottom: 4px;
+  padding: 5px 11px;
+  border-radius: 7px;
+  border: 1px dashed var(--line-strong, #b9c4ba);
+  background: var(--surface-2, #f1f4f1);
+  color: var(--green, #1d4d3a);
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+  font-size: 12.5px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.ld-add-badge-btn {
+  display: inline-flex;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 999px;
+  border: 1px dashed var(--line-strong, #b9c4ba);
+  background: transparent;
+  color: var(--ink-2, #3d4a43);
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  cursor: pointer;
+}
+
+.ld-td-actions {
+  width: 34px;
+  text-align: right;
+  vertical-align: top;
+}
+
+.ld-edit-hint {
+  display: inline-block;
+  margin-left: 6px;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  color: var(--ink-3, #66736c);
+}
+
+/* ---------- Native <dialog> modals ---------- */
+
+dialog.ld-dialog {
+  max-width: min(680px, calc(100vw - 24px));
+  width: 100%;
+  max-height: min(84vh, 720px);
+  margin: auto;
+  padding: 0;
+  border: 1px solid var(--line-strong, #b9c4ba);
+  border-radius: 12px;
+  background: var(--surface, #ffffff);
+  color: var(--ink, #16211c);
+  box-shadow: 0 24px 54px rgba(0, 0, 0, 0.24);
+  font-family: "IBM Plex Sans", system-ui, sans-serif;
+}
+
+dialog.ld-dialog.is-compact {
+  max-width: min(440px, calc(100vw - 24px));
+}
+
+dialog.ld-dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+dialog.ld-dialog:modal {
+  overscroll-behavior: contain;
+}
+
+dialog.ld-dialog::backdrop {
+  overflow: hidden;
+  overscroll-behavior: contain;
+  background: rgba(16, 22, 19, 0.54);
+  backdrop-filter: blur(2px);
+}
+
+.ld-dlg-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 15px 18px;
+  border-bottom: 1px solid var(--line, #d9dfd9);
+}
+
+.ld-dlg-head h2 {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "IBM Plex Serif", Georgia, serif;
+  font-size: 20px;
+}
+
+.ld-dlg-body {
+  padding: 16px 18px;
+  overflow-y: auto;
+  font-size: 14.5px;
+}
+
+.ld-dlg-foot {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  gap: 8px;
+  padding: 12px 18px;
+  border-top: 1px solid var(--line, #d9dfd9);
+  background: var(--surface-2, #f1f4f1);
+}
+
+.ld-history-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.ld-history-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px 12px;
+  padding: 10px 0;
+  border-bottom: 1px solid var(--line, #d9dfd9);
+}
+
+.ld-history-item:last-child {
+  border-bottom: 0;
+}
+
+.ld-history-meta {
+  font-size: 13px;
+  color: var(--ink-2, #3d4a43);
+}
+
+.ld-history-meta b {
+  color: var(--ink, #16211c);
+}
+
+.ld-field {
+  margin-bottom: 12px;
+}
+
+.ld-field label {
+  display: block;
+  font-size: 12.5px;
+  font-weight: 600;
+  color: var(--ink-2, #3d4a43);
+  margin-bottom: 4px;
+}
+
+.ld-field input,
+.ld-field select {
+  width: 100%;
+  min-block-size: 36px;
+  padding: 6px 10px;
+  border-radius: 7px;
+  border: 1px solid var(--line-strong, #b9c4ba);
+  background: var(--bg, #fcfcfb);
+  color: var(--ink, #16211c);
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.ld-badge-swatches {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.ld-swatch-btn {
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 2px solid transparent;
+  cursor: pointer;
+  font-family: "IBM Plex Mono", ui-monospace, monospace;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.ld-swatch-btn[aria-pressed="true"] {
+  border-color: var(--ink, #16211c);
+}
+
+@media (forced-colors: active) {
+  .ld-btn,
+  .ld-mini-btn,
+  .ld-add-btn {
+    border: 1px solid ButtonText;
+    color: ButtonText;
+    background: Canvas;
+  }
+  .ld-btn[aria-pressed="true"],
+  .ld-btn-primary {
+    background: Highlight;
+    color: HighlightText;
+    border-color: Highlight;
+  }
+  .ld-sep {
+    border-inline-start-color: ButtonText;
+  }
+}
+
+@media print {
+  .ld-bar-wrap,
+  .ld-toast,
+  dialog.ld-dialog,
+  [data-editor-ui] {
+    display: none !important;
+  }
+}
