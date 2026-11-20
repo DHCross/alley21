@@ -56,7 +56,7 @@ export default function AiTechPage() {
         <section className="relative min-h-[70vh] flex items-end overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="/airo-assets/images/pages/ai-tech/hero"
+              src="/assets/images/ai-tech-hero.webp"
               alt="AI and technology consulting"
               className="w-full h-full object-cover object-center"
               loading="eager"

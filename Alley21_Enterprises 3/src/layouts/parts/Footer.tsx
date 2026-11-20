@@ -21,7 +21,7 @@ export default function Footer() {
           <div>
             <Link to="/" className="mb-5 inline-block">
               <img
-                src="/airo-assets/images/logo/alley21-transparent"
+                src="/assets/images/logo-alley21-transparent.png"
                 alt="Alley 21 Enterprises"
                 className="h-12 w-auto object-contain"
               />

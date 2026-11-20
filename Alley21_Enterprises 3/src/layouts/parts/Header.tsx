@@ -25,7 +25,7 @@ export default function Header() {
             onClick={() => setIsMobileMenuOpen(false)}
           >
             <img
-              src="/airo-assets/images/logo/alley21-transparent"
+              src="/assets/images/logo-alley21-transparent.png"
               alt="Alley 21 Enterprises"
               className="h-10 w-auto object-contain"
             />

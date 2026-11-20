@@ -53,7 +53,7 @@ export default function VintagePage() {
         <section className="relative min-h-[80vh] flex items-end overflow-hidden">
           <div className="absolute inset-0">
             <img
-              src="/airo-assets/images/pages/vintage/hero"
+              src="/assets/images/vintage-hero.webp"
               alt="Alley 21 Curated Collections"
               className="w-full h-full object-cover object-center"
               loading="eager"
@@ -176,7 +176,7 @@ export default function VintagePage() {
               </motion.div>
               <motion.div variants={fadeUp} className="relative h-[400px] rounded-2xl overflow-hidden">
                 <img
-                  src="/airo-assets/images/pages/furniture/process"
+                  src="/assets/images/furniture-process.webp"
                   alt="Furniture restoration in progress"
                   className="w-full h-full object-cover"
                   loading="lazy"
@@ -229,7 +229,7 @@ export default function VintagePage() {
         {/* ── SOURCING IMAGE BREAK ── */}
         <section className="relative h-72 overflow-hidden">
           <img
-            src="/airo-assets/images/pages/vintage/sourcing"
+            src="/assets/images/vintage-sourcing.webp"
             alt="Sourcing vintage treasures"
             className="w-full h-full object-cover object-center"
             loading="lazy"
