@@ -46,7 +46,7 @@ export default function SelfDiscoveryPage() {
         <section className="relative min-h-[65vh] flex items-end overflow-hidden bg-background">
           <div className="absolute inset-0">
             <img
-              src="/airo-assets/images/pages/self-discovery/hero"
+              src="/assets/images/self-discovery-hero.webp"
               alt="Tools for self-discovery"
               className="w-full h-full object-cover object-center opacity-40"
               loading="eager"

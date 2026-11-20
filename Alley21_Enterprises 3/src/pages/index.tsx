@@ -5,9 +5,9 @@ import { Helmet } from '@dr.pogodin/react-helmet';
 import { home } from 'virtual:content';
 
 const channelImages = [
-  '/airo-assets/images/pages/home/channel-ai-consulting',
-  '/airo-assets/images/pages/home/channel-vintage',
-  '/airo-assets/images/pages/home/channel-insight',
+  '/assets/images/a-small-business-owner-s-desk-in-warm-af-Un1vJf.webp',
+  '/assets/images/home-channel-vintage.webp',
+  '/assets/images/an-open-journal-on-a-wooden-desk-with-ha-JU8Qob.webp',
 ];
 
 const fadeUp = {
@@ -72,7 +72,7 @@ export default function HomePage() {
       {/* ── HERO ── */}
       <section className="relative w-full overflow-hidden" style={{ height: 'calc(100vh - 80px)' }}>
         <img
-          src="/airo-assets/images/uploads/background-khytrw3fsc-1785181715008-file-hs7fq9l4aq"
+          src="/assets/images/home-hero-background.webp"
           alt="Alley 21 Enterprises"
           className="w-full h-full object-cover object-center"
           loading="eager"
